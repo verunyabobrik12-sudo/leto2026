@@ -61,8 +61,16 @@
 
 <!-- ================= HERO ================= -->
 <section class="hero">
-  <div class="ph hero-photo">
-    <img src="images/hero-ship.jpg" alt="Лайнер MSC Fantasia в открытом море">
+  <div class="hero-split">
+    <div class="ph hero-half winter">
+      <img src="images/rome-christmas.jpg" alt="Рождественская ёлка у собора Святого Петра в Риме">
+      <div class="hero-temp"><span>Рим · декабрь</span><b>10–14 °C</b></div>
+    </div>
+    <div class="ph hero-half summer">
+      <img src="images/tenerife-teresitas.jpg" alt="Пляж Лас-Тереситас на Тенерифе">
+      <div class="hero-temp"><span>Тенерифе · декабрь</span><b>21–23 °C</b><small>вода 20–21 °C</small></div>
+    </div>
+    <div class="hero-arrow" aria-hidden="true">→</div>
     <div class="hero-badge">НеобхоДима Тревел · авторский тур</div>
   </div>
   <div class="wrap hero-body">
@@ -90,19 +98,24 @@
     <p class="lead">Декабрьская Европа и канарское солнце в одном маршруте</p>
     <p class="intro">Мы прилетаем в декабрьский Рим: рождественские огни, праздничная ярмарка на площади Навона, ёлка у собора Святого Петра. А через несколько дней — пальмы, тёплый океан, пляжи и сафари на верблюдах по золотым дюнам. Между зимой и летом — шесть дней отдыха на борту лайнера.</p>
 
-    <div class="seasons">
-      <div class="season">
-        <div class="ph"><img src="images/rome-christmas.jpg" alt="Рождественская ёлка у собора Святого Петра" loading="lazy"></div>
-        <p class="season-label winter">Декабрь в Риме</p>
-        <h3>Рождественская атмосфера</h3>
-        <p>днём 10–14 °C</p>
+    <div class="strip-head">
+      <p class="subhead">Что нас ждёт</p>
+      <div class="strip-nav">
+        <button type="button" data-strip="-1" aria-label="Назад">←</button>
+        <button type="button" data-strip="1" aria-label="Вперёд">→</button>
       </div>
-      <div class="season">
-        <div class="ph"><img src="images/tenerife-coast.jpg" alt="Побережье Пуэрто-де-ла-Крус на Тенерифе" loading="lazy"></div>
-        <p class="season-label summer">Декабрь на Канарах</p>
-        <h3>Пляжи и океан</h3>
-        <p>воздух 21–23 °C · вода 20–21 °C</p>
-      </div>
+    </div>
+    <div class="strip" id="strip">
+      <figure class="ph"><img src="images/rome-christmas.jpg" alt="Ёлка и вертеп у собора Святого Петра" loading="lazy"><figcaption><span>Рим</span>Ёлка и вертеп у собора Святого Петра</figcaption></figure>
+      <figure class="ph"><img src="images/trevi.jpg" alt="Фонтан Треви" loading="lazy"><figcaption><span>Рим</span>Фонтан Треви</figcaption></figure>
+      <figure class="ph"><img src="images/rome-colosseum.jpg" alt="Колизей" loading="lazy"><figcaption><span>Рим</span>Колизей</figcaption></figure>
+      <figure class="ph"><img src="images/cruise-pool.jpg" alt="Бассейны на палубе MSC Fantasia" loading="lazy"><figcaption><span>Круиз</span>Бассейны на палубе MSC Fantasia</figcaption></figure>
+      <figure class="ph"><img src="images/cabin-balcony.jpg" alt="Каюта с балконом — возможен бесплатный апгрейд" loading="lazy"><figcaption><span>Круиз</span>Каюта с балконом — возможен бесплатный апгрейд</figcaption></figure>
+      <figure class="ph"><img src="images/grancanaria.jpg" alt="Лас-Пальмас, Гран-Канария" loading="lazy"><figcaption><span>Канары</span>Лас-Пальмас, Гран-Канария</figcaption></figure>
+      <figure class="ph"><img src="images/lapalma.jpg" alt="Санта-Крус-де-ла-Пальма" loading="lazy"><figcaption><span>Канары</span>Санта-Крус-де-ла-Пальма</figcaption></figure>
+      <figure class="ph"><img src="images/hotel-tenerife-1.jpg" alt="Бассейн отеля 5★ у океана" loading="lazy"><figcaption><span>Тенерифе</span>Бассейн отеля 5★ у океана</figcaption></figure>
+      <figure class="ph"><img src="images/teide.jpg" alt="Вулкан Тейде — высшая точка Испании" loading="lazy"><figcaption><span>Тенерифе</span>Вулкан Тейде — высшая точка Испании</figcaption></figure>
+      <figure class="ph"><img src="images/beach-jardin.jpg" alt="Пляж Playa Jardín с чёрным вулканическим песком" loading="lazy"><figcaption><span>Тенерифе</span>Пляж Playa Jardín с чёрным вулканическим песком</figcaption></figure>
     </div>
 
     <p class="subhead">Почему этот тур</p>
@@ -255,17 +268,18 @@
       <div class="stop"><i><svg><use href="#i-plane"/></svg></i>Варшава</div>
     </div>
 
+    <div class="days-tools"><button type="button" id="daysToggle">Развернуть все дни</button></div>
     <div class="days">
-      <div class="day"><div class="day-date">4 декабря<small>пятница</small></div><div><h4>Прилёт в Рим</h4><p>Перелёт Вильнюс → Рим, трансфер, заселение. Свободное время.</p></div></div>
-      <div class="day"><div class="day-date">5 декабря<small>суббота</small></div><div><h4>Ватикан</h4><p>Свободное время или экскурсия «Музеи Ватикана + Сикстинская капелла»*</p></div></div>
-      <div class="day"><div class="day-date">6 декабря<small>воскресенье</small></div><div><h4>Античный Рим</h4><p>Свободное время или обзорная экскурсия по Риму* (Колизей, Форум, Капитолий, Трастевере)</p></div></div>
-      <div class="day"><div class="day-date">7 декабря<small>понедельник</small></div><div><h4>Посадка на лайнер</h4><p>Переезд в порт Чивитавеккья (1–1,5 ч). Отправление около 18:00, первый вечер на борту.</p></div></div>
-      <div class="day"><div class="day-date">8–10 декабря<small>3 дня</small></div><div><h4>Открытый океан</h4><p>Дни на борту: бассейны, спа, рестораны, спорт и отдых по пути к Канарам.</p></div></div>
-      <div class="day"><div class="day-date">11 декабря<small>пятница</small></div><div><h4>Гран-Канария</h4><p>Стоянка около 09:00–20:00 в центре Лас-Пальмаса. Свободное время либо экскурсия по историческому центру Вегета с посещением океанариума*.</p></div></div>
-      <div class="day"><div class="day-date">12 декабря<small>суббота</small></div><div><h4>Ла-Пальма</h4><p>Свободное время.</p></div></div>
-      <div class="day"><div class="day-date">13 декабря<small>воскресенье</small></div><div><h4>Тенерифе</h4><p>Высадка в Санта-Крусе, переезд в Пуэрто-де-ла-Крус, заселение. Свободное время или экскурсия «Неизведанный Тенерифе»*</p></div></div>
-      <div class="day"><div class="day-date">14 декабря<small>понедельник</small></div><div><h4>Тейде и Лоро-парк</h4><p>Свободное время или экскурсия на вулкан Тейде (высшую точку Испании) и в Лоро-парк*</p></div></div>
-      <div class="day"><div class="day-date">15 декабря<small>вторник</small></div><div><h4>Вылет домой</h4><p>Свободное утро, трансфер в аэропорт, вылет Тенерифе → Варшава.</p></div></div>
+      <details class="day"><summary><span class="day-date">4 декабря<small>пятница</small></span><span class="day-title">Прилёт в Рим</span></summary><p>Перелёт Вильнюс → Рим, трансфер, заселение. Свободное время.</p></details>
+      <details class="day"><summary><span class="day-date">5 декабря<small>суббота</small></span><span class="day-title">Ватикан</span></summary><p>Свободное время или экскурсия «Музеи Ватикана + Сикстинская капелла»*</p></details>
+      <details class="day"><summary><span class="day-date">6 декабря<small>воскресенье</small></span><span class="day-title">Античный Рим</span></summary><p>Свободное время или обзорная экскурсия по Риму* (Колизей, Форум, Капитолий, Трастевере)</p></details>
+      <details class="day"><summary><span class="day-date">7 декабря<small>понедельник</small></span><span class="day-title">Посадка на лайнер</span></summary><p>Переезд в порт Чивитавеккья (1–1,5 ч). Отправление около 18:00, первый вечер на борту.</p></details>
+      <details class="day"><summary><span class="day-date">8–10 декабря<small>3 дня</small></span><span class="day-title">Открытый океан</span></summary><p>Дни на борту: бассейны, спа, рестораны, спорт и отдых по пути к Канарам.</p></details>
+      <details class="day"><summary><span class="day-date">11 декабря<small>пятница</small></span><span class="day-title">Гран-Канария</span></summary><p>Стоянка около 09:00–20:00 в центре Лас-Пальмаса. Свободное время либо экскурсия по историческому центру Вегета с посещением океанариума*.</p></details>
+      <details class="day"><summary><span class="day-date">12 декабря<small>суббота</small></span><span class="day-title">Ла-Пальма</span></summary><p>Свободное время.</p></details>
+      <details class="day"><summary><span class="day-date">13 декабря<small>воскресенье</small></span><span class="day-title">Тенерифе</span></summary><p>Высадка в Санта-Крусе, переезд в Пуэрто-де-ла-Крус, заселение. Свободное время или экскурсия «Неизведанный Тенерифе»*</p></details>
+      <details class="day"><summary><span class="day-date">14 декабря<small>понедельник</small></span><span class="day-title">Тейде и Лоро-парк</span></summary><p>Свободное время или экскурсия на вулкан Тейде (высшую точку Испании) и в Лоро-парк*</p></details>
+      <details class="day"><summary><span class="day-date">15 декабря<small>вторник</small></span><span class="day-title">Вылет домой</span></summary><p>Свободное утро, трансфер в аэропорт, вылет Тенерифе → Варшава.</p></details>
     </div>
     <p class="note">* Экскурсии по желанию — подробнее в разделе <a href="ekskursii.html">«Групповые экскурсии»</a>. Программа ориентировочная: время стоянок может уточняться.</p>
   </div>
@@ -319,6 +333,27 @@
 
 
     <a class="more-link" href="viza.html">Список документов и адрес визового центра →</a>
+  </div>
+</section>
+
+<!-- ================= ВОПРОСЫ ================= -->
+<section id="voprosy">
+  <div class="wrap">
+    <p class="eyebrow">Частые вопросы</p>
+    <h2>Отвечаем заранее</h2>
+    <div class="faq">
+      <details><summary>Что входит в стоимость?</summary><p>Во всех форматах: авиаперелёт Вильнюс — Рим и Тенерифе — Варшава, круиз MSC Fantasia «всё включено», отели 4★ в Риме с завтраком и 5★ на Тенерифе с завтраком и ужином, остановки на Гран-Канарии и Ла-Пальме и сопровождение нашей команды. В формате «Лето под ключ» включены ещё экскурсии и входные билеты. Состав форматов — <a href="#formaty">в разделе «Форматы и цены»</a>.</p></details>
+      <details><summary>У меня нет шенгенской визы. Успею?</summary><p>Поможем оформить испанскую визу: проверим паспорт, подготовим документы и бронь по туру, запишем на подачу в визовый центр Испании в Минске. Начинайте как можно раньше — запись бывает загружена, а консульству нужно время на рассмотрение. <a href="viza.html">Подробнее о визе и документах</a>.</p></details>
+      <details><summary>Будут ли ночные переезды?</summary><p>Ни одного. В Рим летим самолётом из Вильнюса, дальше лайнер сам везёт вас к Канарам — отели менять не нужно, чемоданы собирать тоже.</p></details>
+      <details><summary>Как кормят?</summary><p>На лайнере — «всё включено»: завтраки, обеды и ужины в формате шведского стола и ужины с обслуживанием в ресторанах à la carte. В Риме — завтраки в отеле, на Тенерифе — полупансион: завтраки и ужины.</p></details>
+      <details><summary>В какой каюте мы поплывём?</summary><p>Стоимость тура рассчитана на внутреннюю каюту. Возможен бесплатный апгрейд — повышение категории каюты. Стоимость апгрейда до каюты с окном, с балконом или сьюта Yacht Club рассчитает менеджер.</p></details>
+      <details><summary>Экскурсии обязательны?</summary><p>Нет. Все достопримечательности можно посмотреть самостоятельно — мы указали цены входных билетов. Если наберётся 20 желающих, организуем групповые экскурсии с гидом. В формате «Лето под ключ» экскурсии уже включены. <a href="ekskursii.html">Список экскурсий</a>.</p></details>
+      <details><summary>Кто будет с нами в поездке?</summary><p>От вылета из Вильнюса до вылета с Тенерифе с вами будет наш представитель: поможет с заселением, посадкой на лайнер, трансферами и ответит на любые вопросы в пути.</p></details>
+      <details><summary>Можно продлить отдых или изменить даты?</summary><p>Да. Задержаться в Риме, добавить дни у океана, изменить даты — подстроим любой формат под ваши планы. Просто расскажите о них менеджеру.</p></details>
+      <details><summary>Какая погода в декабре?</summary><p>В Риме днём 10–14 °C, рождественская атмосфера. На Канарах воздух 21–23 °C, вода 20–21 °C.</p></details>
+      <details><summary>Отели точно будут эти?</summary><p>Отели указаны ориентировочно. При бронировании возможна замена на отель аналогичной категории с сопоставимым расположением.</p></details>
+    </div>
+    <p class="note">Не нашли ответ? Напишите нам в <a href="https://t.me/+375447884422" target="_blank" rel="noopener">Telegram</a> или <a href="viber://chat?number=%2B375447884422">Viber</a>, или позвоните: <a href="tel:+375447884422">+375 (44) 788-44-22</a>.</p>
   </div>
 </section>
 
@@ -412,6 +447,18 @@
   </div>
 </footer>
 
+<details class="fab">
+  <summary aria-label="Связаться с нами">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.9A8 8 0 1 1 21 12Z"/></svg>
+  </summary>
+  <div class="fab-panel">
+    <b>Есть вопрос о туре?</b>
+    <a href="https://t.me/+375447884422" target="_blank" rel="noopener">Написать в Telegram</a>
+    <a href="viber://chat?number=%2B375447884422">Написать в Viber</a>
+    <a href="tel:+375447884422">Позвонить: +375 (44) 788-44-22</a>
+  </div>
+</details>
+
 <div class="mobile-cta">
   <a href="tel:+375447884422">Позвонить</a>
   <a href="#zayavka">Оставить заявку</a>
@@ -425,6 +472,24 @@
     var form = document.getElementById('leadForm');
     var msg = document.getElementById('formMsg');
     var planSelect = document.getElementById('f-plan');
+
+    // Стрелки ленты «Что нас ждёт»
+    var strip = document.getElementById('strip');
+    document.querySelectorAll('[data-strip]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        strip.scrollBy({ left: Number(b.getAttribute('data-strip')) * strip.clientWidth * 0.8, behavior: 'smooth' });
+      });
+    });
+
+    // «Развернуть все дни» маршрута
+    var toggle = document.getElementById('daysToggle');
+    var days = document.querySelectorAll('.days details');
+    toggle.addEventListener('click', function () {
+      var open = toggle.getAttribute('data-open') !== '1';
+      days.forEach(function (d) { d.open = open; });
+      toggle.setAttribute('data-open', open ? '1' : '0');
+      toggle.textContent = open ? 'Свернуть все дни' : 'Развернуть все дни';
+    });
 
     // Меню на телефоне закрывается после перехода к разделу этой же страницы
     var menu = document.querySelector('.menu');
