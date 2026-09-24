@@ -10,7 +10,7 @@
 <meta property="og:image" content="images/hero-ship.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -285,21 +285,14 @@
         <li class="on">Отель 4★ в Риме, завтраки — 1 ночь</li>
         <li class="on">Круиз MSC Fantasia «всё включено» — 6 ночей</li>
         <li class="on">Размещение на лайнере — Каюта с окном</li>
-        <li class="off">Отель 5★ на Тенерифе, завтраки и ужины</li>
       </ul>
       <p class="pc-group">Трансферы</p>
       <ul class="pc-list">
         <li class="on">Рим → порт Чивитавеккья</li>
-        <li class="off">Порт → отель на Тенерифе</li>
-        <li class="off">Отель → аэропорт Тенерифе</li>
       </ul>
       <p class="pc-group">Сопровождение</p>
       <ul class="pc-list">
         <li class="on">Наша команда на всём маршруте, включая транспортное сопровождение</li>
-      </ul>
-      <p class="pc-group">Экскурсии</p>
-      <ul class="pc-list">
-        <li class="off">«Неизведанный Тенерифе»</li>
       </ul>
       <a class="btn" href="#zayavka" data-plan="Круизный">Выбрать «Круизный»</a>
     </div>
@@ -443,6 +436,43 @@
   </div>
 </section>
 
+<!-- ================= ОТЕЛИ ================= -->
+<section id="oteli" style="background: var(--paper);">
+  <div class="wrap">
+    <p class="eyebrow">Где живём</p>
+    <h2>Отели</h2>
+    <p class="lead">Отели указаны ориентировочно: возможна замена на отель аналогичной категории</p>
+    <div class="hotels">
+      <a class="hotel-card" href="otely.html#rim-otel">
+        <div class="ph"><img src="images/hotel-rome-2.jpg" alt="Отель в Риме" loading="lazy"></div>
+        <div>
+          <p class="eyebrow">Рим · 4–7 декабря</p>
+          <h3>Mercure Roma Cinecittà <span class="stars" aria-label="4 звезды">★★★★</span></h3>
+          <ul class="checks">
+            <li>300 м до метро — без пересадок до центра</li>
+            <li>Завтраки включены</li>
+            <li>Современные номера, ресторан, лаунж-бар</li>
+          </ul>
+          <span class="more">Об отеле →</span>
+        </div>
+      </a>
+      <a class="hotel-card" href="otely.html#tenerife-otel">
+        <div class="ph"><img src="images/hotel-tenerife-1.jpg" alt="Отель на Тенерифе" loading="lazy"></div>
+        <div>
+          <p class="eyebrow">Тенерифе · 13–15 декабря</p>
+          <h3>Best Semiramis <span class="stars" aria-label="5 звёзд">★★★★★</span></h3>
+          <ul class="checks">
+            <li>На берегу Атлантики</li>
+            <li>Завтраки и ужины включены</li>
+            <li>Бассейны, спа, терраса на крыше</li>
+          </ul>
+          <span class="more">Об отеле →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ================= МАРШРУТ ================= -->
 <section id="marshrut" style="background: var(--paper);">
   <div class="wrap">
@@ -462,16 +492,16 @@
 
     <div class="days-tools"><button type="button" id="daysToggle">Развернуть все дни</button></div>
     <div class="days">
-      <details class="day" open><summary><span class="day-date">4 декабря<small>пятница</small></span><span class="day-title">Здравствуй, Рим!</span></summary><div class="day-text"><p>Утренний рейс из Вильнюса — и уже в полдень вы в Вечном городе. Трансфер и заселение в отель 4★ у метро (ориентировочно Mercure Roma Cinecittà) — всё вместе с нашей командой. До станции 300 метров, а линия A без пересадок довезёт до центра.</p><p>Вечер — для первого знакомства с городом: рождественские огни, праздничная ярмарка на площади Навона, ёлка у собора Святого Петра. <a class="day-more" href="rim.html">О Риме →</a></p></div></details>
-      <details class="day"><summary><span class="day-date">5 декабря<small>суббота</small></span><span class="day-title">Рим</span></summary><div class="day-text"><p>Свободный день в Риме — каким он будет, решаете вы. Город в рождественском убранстве: гуляйте в своём ритме по праздничным улицам и площадям, где по одному кварталу можно читать историю Европы.</p><p>По желанию — экскурсия «Ватикан»: Музеи Ватикана, Сикстинская капелла и собор Святого Петра*.</p></div></details>
-      <details class="day"><summary><span class="day-date">6 декабря<small>воскресенье</small></span><span class="day-title">Рим</span></summary><div class="day-text"><p>Ещё один день в Вечном городе — для прогулок и новых открытий. Исторический центр компактен: главные места — в пределах пешей прогулки или пары остановок метро.</p><p>По желанию — обзорная экскурсия «Классический Рим» или поездка в окрестности Рима — виллы Тиволи*.</p></div></details>
-      <details class="day"><summary><span class="day-date">7 декабря<small>понедельник</small></span><span class="day-title">Посадка на лайнер</span></summary><div class="day-text"><p>После завтрака — трансфер в порт Чивитавеккья, дорога займёт 1–1,5 часа. Наша команда поможет с посадкой — и вот вы на борту MSC Fantasia: заселение в каюту, первый ужин, вечерняя палуба.</p><p>Около 18:00 лайнер отходит от причала. Впереди шесть ночей «всё включено» и путь из зимы в лето. <a class="day-more" href="kruiz.html">О лайнере →</a></p></div></details>
-      <details class="day"><summary><span class="day-date">8–10 декабря<small>3 дня</small></span><span class="day-title">Три дня в открытом океане</span></summary><div class="day-text"><p>Самая беззаботная часть путешествия: не нужно собирать чемоданы и никуда спешить. Вы засыпаете в каюте, а просыпаетесь всё ближе к солнцу.</p><p>Бассейны и джакузи на открытых палубах, спа, спорт-центр, детские клубы. Завтраки, обеды и ужины — шведский стол, а вечером — ужин с обслуживанием в ресторане à la carte.</p></div></details>
-      <details class="day"><summary><span class="day-date">11 декабря<small>пятница</small></span><span class="day-title">Гран-Канария</span></summary><div class="day-text"><p>Лайнер швартуется прямо в центре Лас-Пальмаса — стоянка около 09:00–20:00, целый день на острове. Самый большой город Канар и настоящий курорт: за день можно успеть и старый город, и пляж.</p><p><a class="day-more" href="kanary.html">Об островах →</a></p></div></details>
-      <details class="day"><summary><span class="day-date">12 декабря<small>суббота</small></span><span class="day-title">Ла-Пальма</span></summary><div class="day-text"><p>Свободный день на самом зелёном острове маршрута: вулканы, леса и одно из самых чистых небес в мире. Колониальный старый город начинается в нескольких минутах ходьбы от причала.</p></div></details>
-      <details class="day"><summary><span class="day-date">13 декабря<small>воскресенье</small></span><span class="day-title">Тенерифе</span></summary><div class="day-text"><p>Утром лайнер приходит в Санта-Крус-де-Тенерифе. Трансфер на север острова, в курортный Пуэрто-де-ла-Крус, и заселение в отель 5★ на берегу Атлантики (ориентировочно Best Semiramis): бассейны, спа, терраса на крыше, завтраки и ужины включены. Остаток дня — у океана.</p><p>Экскурсия «Неизведанный Тенерифе» — дикие берега, горы Анага и пляж с песком из Сахары: в форматах «Бесконечное лето» и «Лето под ключ» она уже включена. <a class="day-more" href="otely.html#tenerife-otel">Об отеле →</a></p></div></details>
-      <details class="day"><summary><span class="day-date">14 декабря<small>понедельник</small></span><span class="day-title">Остров вечной весны</span></summary><div class="day-text"><p>Утром — снег на вершине вулкана, днём — океан и пляж. Свободный день на Тенерифе: бассейн с видом на океан, пляжи с вулканическим песком, прогулки по Пуэрто-де-ла-Крус.</p><p>По желанию — экскурсия «Тейде и Лоро-парк» или «Обзорная + Маска» — для тех, кто хочет узнать о Тенерифе максимум*.</p></div></details>
-      <details class="day"><summary><span class="day-date">15 декабря<small>вторник</small></span><span class="day-title">Вылет домой</span></summary><div class="day-text"><p>Свободное утро: завтрак и последний час у бассейна с видом на океан. Трансфер в аэропорт и вылет Тенерифе → Варшава.</p><p>Наша команда рядом до самой посадки на рейс. Вы возвращаетесь в декабрь — с летом внутри.</p></div></details>
+      <details class="day" open><summary><span class="day-date">4 декабря<small>пятница</small></span><span class="day-title">Здравствуй, Рим!</span></summary><div class="day-text"><p class="day-short">Утренний рейс из Вильнюса — и в полдень вы уже в Риме. Заселение в отель 4★ у метро и первый вечер в рождественском городе.</p><p>Утренний рейс из Вильнюса — и уже в полдень вы в Вечном городе. Трансфер и заселение в отель 4★ у метро — всё вместе с нашей командой. До станции 300 метров, а линия A без пересадок довезёт до центра.</p><p>Вечер — для первого знакомства с городом: рождественские огни, праздничная ярмарка на площади Навона, ёлка у собора Святого Петра. <a class="day-more" href="rim.html">О Риме →</a></p></div></details>
+      <details class="day"><summary><span class="day-date">5 декабря<small>суббота</small></span><span class="day-title">Рим</span></summary><div class="day-text"><p class="day-short">Свободный день в праздничном Риме. По желанию — экскурсия «Ватикан»*.</p><p>Свободный день в Риме — каким он будет, решаете вы. Город в рождественском убранстве: гуляйте в своём ритме по праздничным улицам и площадям, где по одному кварталу можно читать историю Европы.</p><p>По желанию — экскурсия «Ватикан»: Музеи Ватикана, Сикстинская капелла и собор Святого Петра*.</p></div></details>
+      <details class="day"><summary><span class="day-date">6 декабря<small>воскресенье</small></span><span class="day-title">Рим</span></summary><div class="day-text"><p class="day-short">Прогулки по Вечному городу. По желанию — «Классический Рим» или виллы Тиволи*.</p><p>Ещё один день в Вечном городе — для прогулок и новых открытий. Исторический центр компактен: главные места — в пределах пешей прогулки или пары остановок метро.</p><p>По желанию — обзорная экскурсия «Классический Рим» или поездка в окрестности Рима — виллы Тиволи*.</p></div></details>
+      <details class="day"><summary><span class="day-date">7 декабря<small>понедельник</small></span><span class="day-title">Посадка на лайнер</span></summary><div class="day-text"><p class="day-short">Трансфер в порт Чивитавеккья и посадка на MSC Fantasia. Отправление около 18:00.</p><p>После завтрака — трансфер в порт Чивитавеккья, дорога займёт 1–1,5 часа. Наша команда поможет с посадкой — и вот вы на борту MSC Fantasia: заселение в каюту, первый ужин, вечерняя палуба.</p><p>Около 18:00 лайнер отходит от причала. Впереди шесть ночей «всё включено» и путь из зимы в лето. <a class="day-more" href="kruiz.html">О лайнере →</a></p></div></details>
+      <details class="day"><summary><span class="day-date">8–10 декабря<small>3 дня</small></span><span class="day-title">Три дня в открытом океане</span></summary><div class="day-text"><p class="day-short">Дни в открытом океане: бассейны, спа, рестораны — «всё включено».</p><p>Самая беззаботная часть путешествия: не нужно собирать чемоданы и никуда спешить. Вы засыпаете в каюте, а просыпаетесь всё ближе к солнцу.</p><p>Бассейны и джакузи на открытых палубах, спа, спорт-центр, детские клубы. Завтраки, обеды и ужины — шведский стол, а вечером — ужин с обслуживанием в ресторане à la carte.</p></div></details>
+      <details class="day"><summary><span class="day-date">11 декабря<small>пятница</small></span><span class="day-title">Гран-Канария</span></summary><div class="day-text"><p class="day-short">Целый день в Лас-Пальмасе: старый город и пляж.</p><p>Лайнер швартуется прямо в центре Лас-Пальмаса — стоянка около 09:00–20:00, целый день на острове. Самый большой город Канар и настоящий курорт: за день можно успеть и старый город, и пляж.</p><p><a class="day-more" href="kanary.html">Об островах →</a></p></div></details>
+      <details class="day"><summary><span class="day-date">12 декабря<small>суббота</small></span><span class="day-title">Ла-Пальма</span></summary><div class="day-text"><p class="day-short">Свободный день на самом зелёном острове маршрута.</p><p>Свободный день на самом зелёном острове маршрута: вулканы, леса и одно из самых чистых небес в мире. Колониальный старый город начинается в нескольких минутах ходьбы от причала.</p></div></details>
+      <details class="day"><summary><span class="day-date">13 декабря<small>воскресенье</small></span><span class="day-title">Тенерифе</span></summary><div class="day-text"><p class="day-short">Высадка и трансфер в отель 5★ на берегу океана. Остаток дня — у океана.</p><p>Утром лайнер приходит в Санта-Крус-де-Тенерифе. Трансфер на север острова, в курортный Пуэрто-де-ла-Крус, и заселение в отель 5★ на берегу Атлантики: бассейны, спа, терраса на крыше, завтраки и ужины включены. Остаток дня — у океана.</p><p>Экскурсия «Неизведанный Тенерифе» — дикие берега, горы Анага и пляж с песком из Сахары: в форматах «Бесконечное лето» и «Лето под ключ» она уже включена. <a class="day-more" href="otely.html#tenerife-otel">Об отеле →</a></p></div></details>
+      <details class="day"><summary><span class="day-date">14 декабря<small>понедельник</small></span><span class="day-title">Остров вечной весны</span></summary><div class="day-text"><p class="day-short">Свободный день у океана. По желанию — «Тейде и Лоро-парк» или «Обзорная + Маска»*.</p><p>Утром — снег на вершине вулкана, днём — океан и пляж. Свободный день на Тенерифе: бассейн с видом на океан, пляжи с вулканическим песком, прогулки по Пуэрто-де-ла-Крус.</p><p>По желанию — экскурсия «Тейде и Лоро-парк» или «Обзорная + Маска» — для тех, кто хочет узнать о Тенерифе максимум*.</p></div></details>
+      <details class="day"><summary><span class="day-date">15 декабря<small>вторник</small></span><span class="day-title">Вылет домой</span></summary><div class="day-text"><p class="day-short">Свободное утро у бассейна, трансфер и вылет Тенерифе → Варшава.</p><p>Свободное утро: завтрак и последний час у бассейна с видом на океан. Трансфер в аэропорт и вылет Тенерифе → Варшава.</p><p>Наша команда рядом до самой посадки на рейс. Вы возвращаетесь в декабрь — с летом внутри.</p></div></details>
     </div>
     <p class="note">* Экскурсии по желанию проводятся при наборе группы от 20 человек. «Неизведанный Тенерифе» уже включена в форматы «Бесконечное лето» и «Лето под ключ». <a href="ekskursii.html">Все экскурсии →</a><br>Программа ориентировочная: время стоянок может уточняться.</p>
   </div>
@@ -520,7 +550,6 @@
       <div class="ph"><img src="images/team-group.jpg" alt="Команда «НеобхоДима Тревел»" loading="lazy"></div>
       <div class="ph"><img src="images/guide-dmitry-trevi.jpg" alt="У фонтана Треви в Риме" loading="lazy"></div>
       <div class="ph"><img src="images/team-sunset.jpg" alt="Закат на палубе лайнера" loading="lazy"></div>
-      <div class="ph"><img src="images/team-port.jpg" alt="У борта лайнера MSC" loading="lazy"></div>
     </div>
     <p class="caption">Наша команда в поездках и круизах</p>
   </div>
@@ -557,8 +586,8 @@
 <section id="podrobnee">
   <div class="wrap">
     <p class="eyebrow">Подробнее о поездке</p>
-    <h2>Что посмотреть и где жить</h2>
-    <p class="lead">Города, лайнер, отели и экскурсии — на отдельных страницах</p>
+    <h2>Что посмотреть</h2>
+    <p class="lead">Рим, лайнер, Канарские острова и экскурсии — подробно на отдельных страницах</p>
 
     <div class="teasers">
       <a class="teaser" href="rim.html">
@@ -573,17 +602,9 @@
         <div class="ph"><img src="images/tenerife-teresitas.jpg" alt="Пляж Лас-Тереситас" loading="lazy"></div>
         <div><p class="eyebrow">11–15 декабря</p><h3>Канарские острова</h3><p>Гран-Канария, Ла-Пальма и Тенерифе</p><span class="more">Подробнее →</span></div>
       </a>
-      <a class="teaser" href="otely.html">
-        <div class="ph"><img src="images/hotel-tenerife-1.jpg" alt="Бассейн отеля на Тенерифе" loading="lazy"></div>
-        <div><p class="eyebrow">Рим и Тенерифе</p><h3>Отели</h3><p>4★ у метро в Риме и 5★ у океана на Тенерифе</p><span class="more">Подробнее →</span></div>
-      </a>
       <a class="teaser" href="ekskursii.html">
         <div class="ph"><img src="images/teide.jpg" alt="Вулкан Тейде" loading="lazy"></div>
         <div><p class="eyebrow">С гидом</p><h3>Экскурсии</h3><p>Шесть экскурсий с гидом — по желанию</p><span class="more">Подробнее →</span></div>
-      </a>
-      <a class="teaser" href="viza.html">
-        <div class="ph"><img src="images/spanish.jpg" alt="Испанская лестница" loading="lazy"></div>
-        <div><p class="eyebrow">Визовая поддержка</p><h3>Виза</h3><p>Поможем оформить испанский шенген</p><span class="more">Подробнее →</span></div>
       </a>
     </div>
   </div>

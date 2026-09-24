@@ -14,7 +14,7 @@
   --text: #1d2433;
   --muted: #5d6475;
   --serif: "Playfair Display", Georgia, "Times New Roman", serif;
-  --sans: "Jost", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --sans: "Lora", Georgia, "Times New Roman", serif;
   --radius: 10px;
 }
 
@@ -910,4 +910,71 @@ body { font-size: 18px; }
   .yacht { padding: 14px; }
   .yacht h3 { font-size: 24px; }
   .val { white-space: normal; }
+}
+
+/* ================= ПРАВКИ: LORA, ОТЕЛИ, ЛЁГКИЙ ТЕЛЕФОН ================= */
+
+body { font-size: 17px; }
+
+/* Таблица форматов открыта целиком, без «липкой» шапки */
+.cmp-head { position: static; box-shadow: none; }
+
+/* Короткое описание дня — только на телефоне */
+.day-short { display: none; }
+
+/* Лента команды — три фото */
+.team-strip { grid-template-columns: repeat(3, 1fr); }
+.team-strip .ph { aspect-ratio: 4 / 5; }
+
+/* Раздел «Что посмотреть» — четыре карточки */
+.teasers { grid-template-columns: repeat(4, 1fr); }
+
+/* Отели на главной */
+.hotels { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 32px; }
+.hotel-card {
+  display: grid; grid-template-rows: 240px auto; text-decoration: none; color: inherit;
+  background: var(--cream); border: 1px solid var(--line); border-radius: 14px; overflow: hidden;
+  transition: transform .2s, box-shadow .2s;
+}
+.hotel-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(22,38,63,.12); }
+.hotel-card .ph { border-radius: 0; }
+.hotel-card > div:last-child { padding: 20px 22px 22px; }
+.hotel-card .eyebrow { margin-bottom: 6px; }
+.hotel-card h3 { font-size: 24px; }
+.hotel-card .stars { font-size: 16px; }
+.hotel-card .checks { margin-top: 12px; }
+.hotel-card .checks li { font-size: 15.5px; margin-bottom: 6px; }
+.hotel-card .more { font-weight: 700; color: var(--terra); font-size: 15px; }
+
+@media (max-width: 900px) {
+  .teasers { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 680px) {
+  body { font-size: 16px; }
+  section { padding-top: 44px; padding-bottom: 44px; }
+  h2 { font-size: 30px; }
+  .intro { font-size: 16px; margin-top: 16px; }
+  .lead { font-size: 14.5px; }
+  .subhead { margin-top: 32px; }
+
+  /* Маршрут: на телефоне — одна-две строки на день */
+  .day-short { display: block; margin: 0 0 6px; color: var(--text); font-size: 15px; }
+  .day-text > p:not(.day-short) { display: none; }
+  .day-text { margin-bottom: 12px; }
+  .day summary { padding-top: 10px; padding-bottom: 10px; }
+  .days-tools { display: none; }
+
+  /* «Почему этот тур» — плотнее */
+  .cards { gap: 8px; }
+  .card { padding: 12px 14px; }
+  .card p { font-size: 14px; }
+
+  .hotels { grid-template-columns: 1fr; gap: 14px; margin-top: 20px; }
+  .hotel-card { grid-template-rows: 180px auto; }
+  .hotel-card h3 { font-size: 21px; }
+
+  .teasers { grid-template-columns: 1fr; }
+  .team-strip .ph { flex-basis: 60%; }
+  .plan-card { padding: 20px 16px 18px; }
+  .pc-list li { font-size: 14.5px; padding-top: 4px; padding-bottom: 4px; }
 }
