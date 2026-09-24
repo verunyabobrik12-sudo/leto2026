@@ -277,6 +277,7 @@ section { padding-top: 88px; padding-bottom: 88px; }
 .step h4 { margin: 0 0 6px; font-size: 17px; color: var(--navy); }
 .step p { margin: 0; font-size: 14.5px; color: var(--muted); }
 .visa-center { background: var(--navy); color: #fff; border-radius: 10px; padding: 22px 26px; margin-top: 28px; }
+.visa-center .btn { display: inline-block; }
 .visa-center b { display: block; color: var(--peach); font-size: 13px; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 6px; }
 
 /* ---------- ЗАЯВКА ---------- */
