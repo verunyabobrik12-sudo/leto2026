@@ -14,7 +14,7 @@
   --text: #1d2433;
   --muted: #5d6475;
   --serif: "Playfair Display", Georgia, "Times New Roman", serif;
-  --sans: "Manrope", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --sans: "Jost", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   --radius: 10px;
 }
 
@@ -883,3 +883,8 @@ a.stop:hover i { background: var(--terra); }
 @media (max-width: 680px) {
   .cmp-head { top: 110px; }
 }
+
+/* Jost мельче Manrope: текст чуть крупнее, жирный — полегче */
+body { font-size: 18px; }
+.card h4, .day-title, .faq summary, .cabin-head h4, .step h4, .tour h4, .cabin-inc h4, .guide-role, .val, .btn, .tabs a { font-weight: 600; }
+@media (max-width: 680px) { body { font-size: 17px; } }
