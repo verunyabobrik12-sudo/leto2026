@@ -690,3 +690,5 @@ footer h3 { color: #fff; font-size: 28px; margin-bottom: 12px; }
   .videos::-webkit-scrollbar { display: none; }
   .yt { flex: 0 0 80%; scroll-snap-align: start; }
 }
+
+#marshrut .note a { color: var(--terra); font-weight: 700; }
