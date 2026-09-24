@@ -85,7 +85,7 @@
 - Рим, Mercure Roma Cinecittà: `hotel-rome-2.jpg` — фасад (большое фото), `hotel-rome-1.jpg` — номер, `hotel-rome-3.jpg` — номер с телевизором, `hotel-rome-4.jpg` — завтрак, `hotel-rome-6.jpg` — тренажёрный зал. `hotel-rome-5.jpg` (выпечка) — запасной.
 - Тенерифе, Best Semiramis: `hotel-tenerife-1.jpg` — бассейн (большое фото), `-2` — вид с балкона, `-3` — номер, `-4` — ресторан, `-5` — лобби. `hotel-tenerife-6.jpg` (тренажёрный зал) — запасной.
 
-**Фото экскурсий:** `pantheon`, `vatican`, `lalaguna`, `teide`, `camels`, `wine`, `anaga`; в Риме — `trevi`, `spanish`, `rome-navona`; пляж — `beach-jardin`. `parrot.jpg` — запасной (Лоро-парк).
+**Фото экскурсий:** `pantheon`, `vatican`, `lalaguna`, `teide`, `anaga`, `masca`, `tivoli`; `camels`, `wine` — запасные; в Риме — `trevi`, `spanish`, `rome-navona`; пляж — `beach-jardin`. `parrot.jpg` — запасной (Лоро-парк).
 
 Если какого-то файла нет, на его месте видна мягкая серо-голубая заливка — страница не ломается.
 
