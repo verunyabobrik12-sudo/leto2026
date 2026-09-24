@@ -1,0 +1,4 @@
+.playwright-mcp/
+*.log
+Thumbs.db
+desktop.ini
