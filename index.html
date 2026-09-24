@@ -226,7 +226,6 @@
 
   /* ---------- КРУИЗ ---------- */
   #kruiz { background: var(--paper); }
-  .onboard .card { background: var(--cream); }
   .table { margin-top: 0; }
   .trow { display: grid; grid-template-columns: 160px 1fr 1fr; gap: 20px; padding: 14px 0; border-bottom: 1px solid var(--line); }
   .trow b:first-child { color: var(--terra); }
@@ -332,6 +331,7 @@
   .legal { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.15); font-size: 13px; color: rgba(255,255,255,.5); }
 
   .mobile-cta { display: none; }
+  .swipe-hint { display: none; font-size: 13px; color: var(--muted); margin: 10px 0 0; }
 
   /* ---------- АДАПТИВ ---------- */
   @media (max-width: 900px) {
@@ -375,6 +375,47 @@
     .custom .btn { margin-left: 0; }
     .steps { grid-template-columns: 1fr; }
     .form { padding: 24px 18px; }
+
+    /* Первое фото: в кадре нос лайнера с логотипом */
+    .hero-photo img { object-position: 22% 45%; }
+
+    /* Плотнее карточки «Почему этот тур» */
+    .card { padding: 16px 18px; gap: 14px; }
+    .ico { flex-basis: 36px; width: 36px; height: 36px; }
+    .ico svg { width: 18px; height: 18px; }
+    .card h4 { font-size: 16px; }
+    .card p { font-size: 14.5px; }
+
+    /* «На борту» — две колонки */
+    .cards.onboard { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .onboard .card { padding: 14px; }
+
+    /* Маршрут: полоса с городами дублирует подзаголовок — прячем, дата слева */
+    .route-line { display: none; }
+    .days { margin-top: 28px; }
+    .day { grid-template-columns: 84px 1fr; gap: 14px; padding: 14px 0; }
+    .day-date { font-size: 17px; }
+    .day-date small { font-size: 12.5px; }
+    .day h4 { font-size: 16px; }
+    .day p { font-size: 14.5px; }
+
+    /* Ленты, которые листают пальцем: фото Рима, каюты, пляжи, экскурсии */
+    .trio, .cabins, .tours, .beaches {
+      display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory;
+      margin-left: -16px; margin-right: -16px; padding: 0 16px 6px; scroll-padding-left: 16px;
+      scrollbar-width: none; -webkit-overflow-scrolling: touch;
+    }
+    .trio::-webkit-scrollbar, .cabins::-webkit-scrollbar, .tours::-webkit-scrollbar, .beaches::-webkit-scrollbar { display: none; }
+    .trio > *, .cabins > *, .tours > *, .beaches > * { flex: 0 0 80%; scroll-snap-align: start; }
+    .tour.wide { display: block; }
+    .tour.wide .ph { aspect-ratio: 4 / 3; }
+    .tour.wide h4 { font-size: 18px; font-family: var(--sans); font-weight: 700; }
+    .swipe-hint { display: block; margin-top: 20px; }
+    .swipe-hint + .cabins, .swipe-hint + .tours { margin-top: 10px; }
+
+    /* Виза: номер шага слева от текста */
+    .step { display: grid; grid-template-columns: 36px 1fr; gap: 0 14px; padding: 16px; }
+    .step i { width: 36px; height: 36px; margin: 0; grid-row: span 2; }
     .mobile-cta {
       display: grid; grid-template-columns: 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
       background: var(--navy); box-shadow: 0 -4px 16px rgba(0,0,0,.2);
@@ -651,7 +692,7 @@
     <p class="intro">Из декабрьского Рима — прямиком к пальмам и океану. Лайнер MSC Fantasia сам везёт вас от зимы к лету: не нужно собирать чемоданы, искать транспорт и ехать ночами. Вы засыпаете в каюте, а просыпаетесь всё ближе к солнцу. Маршрут заходит на три острова Канарского архипелага.</p>
 
     <p class="subhead">На борту</p>
-    <div class="cards three">
+    <div class="cards three onboard">
       <div class="card col"><h4>Шведский стол</h4><p>Завтраки, обеды и ужины в формате буфета</p></div>
       <div class="card col"><h4>Рестораны à la carte</h4><p>Ужины с обслуживанием и сменой блюд</p></div>
       <div class="card col"><h4>Бассейны</h4><p>Бассейны и джакузи на открытых палубах</p></div>
@@ -679,6 +720,7 @@
     <p class="lead">Выберите, каким будет ваш дом на время круиза</p>
     <p class="upgrade">Стоимость тура рассчитана на внутреннюю каюту. Возможен <b>бесплатный апгрейд</b> — повышение категории каюты по сравнению с изначальной бронью.</p>
 
+    <p class="swipe-hint">Листайте вбок →</p>
     <div class="cabins">
       <div class="cabin">
         <div class="ph"><img src="images/cabin-inside.jpg" alt="Внутренняя каюта" loading="lazy"></div>
@@ -776,7 +818,7 @@
     <p class="note">Отель указан ориентировочно. При бронировании возможна замена на отель аналогичной категории.</p>
 
     <p class="subhead">Пляжи рядом · декабрь: воздух 21–23 °C, вода 20–21 °C</p>
-    <div class="cards three">
+    <div class="cards three beaches">
       <div class="card col beach"><div class="ph"><img src="images/beach-jardin.jpg" alt="Пляж Playa Jardín" loading="lazy"></div><div><h4>Playa Jardín</h4><p>Чёрный вулканический песок и сад Сесара Манрике</p></div></div>
       <div class="card col beach"><div class="ph"><img src="images/tenerife-coast.jpg" alt="Набережная Пуэрто-де-ла-Крус" loading="lazy" style="object-position: 70% center;"></div><div><h4>Лаго-Мартианес</h4><p>Лагуны с морской водой — если не хочется в открытый океан</p></div></div>
       <div class="card col"><h4>Playa del Bollullo</h4><p>Дикий живописный пляж в скалах, около 2,5 км от отеля</p></div>
@@ -792,6 +834,7 @@
     <p class="lead">Можно гулять самостоятельно — а можно с гидом</p>
     <p class="intro">Все достопримечательности программы доступны для самостоятельного посещения — входные билеты указаны выше. Если наберётся <b>20 желающих</b>, мы организуем групповые экскурсии с гидом:</p>
 
+    <p class="swipe-hint">Листайте вбок →</p>
     <div class="tours">
       <div class="tour"><div class="ph"><img src="images/pantheon.jpg" alt="Пантеон в Риме" loading="lazy"></div><div><h4>Обзорная экскурсия по Риму</h4><p>Главные площади, фонтаны и история Вечного города</p></div></div>
       <div class="tour"><div class="ph"><img src="images/vatican.jpg" alt="Ватикан" loading="lazy"></div><div><h4>Ватикан</h4><p>Музеи Ватикана, Сикстинская капелла и собор Святого Петра</p></div></div>
