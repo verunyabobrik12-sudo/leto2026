@@ -888,3 +888,26 @@ a.stop:hover i { background: var(--terra); }
 body { font-size: 18px; }
 .card h4, .day-title, .faq summary, .cabin-head h4, .step h4, .tour h4, .cabin-inc h4, .guide-role, .val, .btn, .tabs a { font-weight: 600; }
 @media (max-width: 680px) { body { font-size: 17px; } }
+
+/* ================= MSC YACHT CLUB ================= */
+.yacht {
+  display: grid; grid-template-columns: 1fr 1.15fr; gap: 36px; align-items: center; margin-top: 36px;
+  padding: 20px; border-radius: 16px; background: var(--paper); border: 1px solid var(--line);
+  box-shadow: 0 16px 40px rgba(22,38,63,.07);
+}
+.yacht .ph { height: 100%; min-height: 340px; }
+.yacht h3 { font-size: 30px; margin: 10px 0 10px; }
+.yacht p { color: var(--muted); }
+.yacht .checks { margin-top: 8px; }
+.yacht .inc-badge { background: var(--navy); color: var(--sun); }
+.val { white-space: nowrap; }
+
+@media (max-width: 900px) {
+  .yacht { grid-template-columns: 1fr; gap: 20px; }
+  .yacht .ph { min-height: 0; aspect-ratio: 16 / 10; }
+}
+@media (max-width: 680px) {
+  .yacht { padding: 14px; }
+  .yacht h3 { font-size: 24px; }
+  .val { white-space: normal; }
+}
