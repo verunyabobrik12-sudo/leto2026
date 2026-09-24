@@ -979,3 +979,6 @@ body { font-size: 17px; }
   .plan-card { padding: 20px 16px 18px; }
   .pc-list li { font-size: 14.5px; padding-top: 4px; padding-bottom: 4px; }
 }
+
+/* На компьютере дни открыты целиком — кнопка не нужна */
+@media (min-width: 681px) { .days-tools { display: none; } }
