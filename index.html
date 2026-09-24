@@ -25,36 +25,28 @@
     <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4 6.5 20.3l1-6.2L3 9.7l6.2-.9Z"/></symbol>
     <symbol id="i-metro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M9 14h.01M15 14h.01M8 21l2-4M16 21l-2-4"/></symbol>
     <symbol id="i-people" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c.5-3.5 3-5.5 6-5.5s5.5 2 6 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.6c2.4.3 4 2 4.5 5"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></symbol>
   </defs>
 </svg>
 
 <header class="topbar">
   <div class="wrap">
     <a class="brand" href="index.html">НеобхоДима <span>Тревел</span></a>
-    <nav class="nav">
-      <a href="index.html#formaty">Форматы и цены</a>
-      <a href="rim.html">Рим</a>
-      <a href="kruiz.html">Круиз и каюты</a>
-      <a href="kanary.html">Канары</a>
-      <a href="ekskursii.html">Экскурсии</a>
-      <a href="viza.html">Виза</a>
-    </nav>
     <a class="top-phone" href="tel:+375447884422">+375 (44) 788-44-22</a>
     <a class="btn" href="index.html#zayavka">Оставить заявку</a>
-    <details class="menu">
-      <summary aria-label="Меню"><span></span></summary>
-      <nav>
-        <a href="index.html">Главная</a>
-        <a href="index.html#formaty">Форматы и цены</a>
-        <a href="rim.html">Рим</a>
-        <a href="kruiz.html">Круиз и каюты</a>
-        <a href="kanary.html">Канары</a>
-        <a href="ekskursii.html">Экскурсии</a>
-        <a href="viza.html">Виза</a>
-        <a href="tel:+375447884422">+375 (44) 788-44-22</a>
-      </nav>
-    </details>
   </div>
+  <nav class="tabs" aria-label="Разделы">
+    <div class="wrap">
+      <a href="index.html" aria-current="page">Главная</a>
+      <a href="index.html#formaty">Цены</a>
+      <a href="rim.html">Рим</a>
+      <a href="kruiz.html">Круиз</a>
+      <a href="kanary.html">Канары</a>
+      <a href="otely.html">Отели</a>
+      <a href="ekskursii.html">Экскурсии</a>
+      <a href="viza.html">Виза</a>
+    </div>
+  </nav>
 </header>
 
 <main id="top">
@@ -110,7 +102,7 @@
       <figure class="ph"><img src="images/trevi.jpg" alt="Прогулка по Риму" loading="lazy"><figcaption><span>Рим</span>Вечный город в вашем ритме</figcaption></figure>
       <figure class="ph"><img src="images/cruise-pool.jpg" alt="Бассейны на палубе MSC Fantasia" loading="lazy"><figcaption><span>Круиз</span>Бассейны на палубе MSC Fantasia</figcaption></figure>
       <figure class="ph"><img src="images/team-deck.jpg" alt="Закат на палубе лайнера" loading="lazy"><figcaption><span>Круиз</span>Закаты над океаном — прямо с палубы</figcaption></figure>
-      <figure class="ph"><img src="images/cabin-balcony.jpg" alt="Каюта с балконом — возможен бесплатный апгрейд" loading="lazy"><figcaption><span>Круиз</span>Каюта с балконом — возможен бесплатный апгрейд</figcaption></figure>
+      <figure class="ph"><img src="images/cabin-window.jpg" alt="Каюта с окном" loading="lazy"><figcaption><span>Круиз</span>Каюта с окном — вид на океан</figcaption></figure>
       <figure class="ph"><img src="images/grancanaria.jpg" alt="Лас-Пальмас, Гран-Канария" loading="lazy"><figcaption><span>Канары</span>Лас-Пальмас, Гран-Канария</figcaption></figure>
       <figure class="ph"><img src="images/lapalma.jpg" alt="Санта-Крус-де-ла-Пальма" loading="lazy"><figcaption><span>Канары</span>Санта-Крус-де-ла-Пальма</figcaption></figure>
       <figure class="ph"><img src="images/hotel-tenerife-1.jpg" alt="Бассейн отеля 5★ у океана" loading="lazy"><figcaption><span>Тенерифе</span>Бассейн отеля 5★ у океана</figcaption></figure>
@@ -120,12 +112,12 @@
 
     <p class="subhead">Почему этот тур</p>
     <div class="cards">
-      <div class="card"><span class="ico"><svg><use href="#i-road"/></svg></span><div><h4>Без утомительных переездов</h4><p>Авиаперелёт в Рим, а после — путешествие на лайнере MSC Cruises без необходимости менять отели</p></div></div>
-      <div class="card"><span class="ico"><svg><use href="#i-plane"/></svg></span><div><h4>Вильнюс — Рим самолётом</h4><p>Быстрый перелёт без многочасовых очередей на границе — выезжаете утром и уже вечером гуляете по Риму</p></div></div>
-      <div class="card"><span class="ico"><svg><use href="#i-ship"/></svg></span><div><h4>6 дней на круизе «всё включено»</h4><p>Шведский стол, рестораны à la carte, бассейны, спа, детские клубы и спорт-центр — всё на борту MSC Fantasia</p></div></div>
+      <div class="card"><span class="ico"><svg><use href="#i-road"/></svg></span><div><h4>Без утомительных переездов</h4><p>Перелёт в Рим — из Вильнюса, а дальше лайнер MSC сам везёт вас к Канарам: без ночных переездов и смены отелей</p></div></div>
+      <div class="card"><span class="ico"><svg><use href="#i-doc"/></svg></span><div><h4>Поможем с испанским шенгеном</h4><p>Откроем визу под тур: подготовим документы и запишем на подачу. Возможна подача без личного присутствия</p></div></div>
+      <div class="card"><span class="ico"><svg><use href="#i-ship"/></svg></span><div><h4>7 дней на круизе «всё включено»</h4><p>Шведский стол, рестораны à la carte, бассейны, спа, детские клубы и спорт-центр — всё на борту MSC Fantasia</p></div></div>
       <div class="card"><span class="ico"><svg><use href="#i-star"/></svg></span><div><h4>Отель 5★ на Тенерифе</h4><p>У океана, с бассейнами и спа, полупансион: завтраки и ужины включены. Недалеко пляжи с вулканическим песком, бирюзовые лагуны и огромный зоопарк</p></div></div>
       <div class="card"><span class="ico"><svg><use href="#i-metro"/></svg></span><div><h4>Отель 4★ в Риме у метро</h4><p>Метро в 300 метрах — линия A идёт к Испанской лестнице и Ватикану. Завтраки включены</p></div></div>
-      <div class="card"><span class="ico"><svg><use href="#i-people"/></svg></span><div><h4>Сопровождение нашей команды</h4><p>Мы рядом на всём маршруте: от вылета из Вильнюса до посадки на рейс домой</p></div></div>
+      <div class="card"><span class="ico"><svg><use href="#i-people"/></svg></span><div><h4>Сопровождение нашей команды</h4><p>Мы рядом на всём маршруте: от вылета из Вильнюса до посадки на рейс домой. Транспортное сопровождение тоже включено</p></div></div>
     </div>
   </div>
 </section>
@@ -135,89 +127,297 @@
   <div class="wrap">
     <p class="eyebrow">Три формата одного путешествия</p>
     <h2>Выберите свой формат</h2>
-    <p class="lead">От короткого круиза до полной программы — под ваш отпуск и бюджет</p>
+    <p class="lead">Сравните, что входит в каждый, — от короткого круиза до «всё включено» от начала до конца</p>
+    <p class="price-note">Цены рассчитаны на двухместное размещение в каюте с окном.</p>
 
-    <div class="plans">
-      <div class="plan">
-        <div class="plan-len">8 дней · 7 ночей</div>
-        <h3>Круизный</h3>
-        <div class="plan-dates">6–13 декабря</div>
-        <div class="plan-price">от 1 280 €</div>
-        <p class="plan-for">Для тех, кому главное — море и лайнер</p>
-        <ul class="checks">
-          <li>1 ночь в Риме, отель 4★ с завтраком</li>
-          <li>Круиз «всё включено», 6 ночей</li>
-          <li>Свободное время в Риме и на Тенерифе</li>
-          <li>Экскурсии по желанию*</li>
-        </ul>
-        <a class="btn" href="#zayavka" data-plan="Круизный">Выбрать</a>
+    <div class="compare" role="table" aria-label="Сравнение форматов">
+      <div class="cmp-row cmp-head" role="row">
+        <div class="cmp-label" role="columnheader"><span>Что входит</span></div>
+        <div class="cmp-plan" role="columnheader">
+          <div class="plan-len">8 дней · 7 ночей</div>
+          <h3>Круизный</h3>
+          <div class="plan-dates">6–13 декабря</div>
+          <div class="plan-price">от 1 280 €</div>
+          <p class="plan-for">Для тех, кому главное — море и лайнер</p>
+        </div>
+        <div class="cmp-plan featured" role="columnheader">
+          <div class="plan-flag">Выбор покупателей</div>
+          <div class="plan-len">12 дней · 11 ночей</div>
+          <h3>Бесконечное лето</h3>
+          <div class="plan-dates">4–15 декабря</div>
+          <div class="plan-price">от 1 650 €</div>
+          <p class="plan-for">Вся программа и свобода планировать дни самому</p>
+        </div>
+        <div class="cmp-plan" role="columnheader">
+          <div class="plan-len">12 дней · 11 ночей</div>
+          <h3>Лето под ключ</h3>
+          <div class="plan-dates">4–15 декабря</div>
+          <div class="plan-price">от 2 580 €</div>
+          <p class="plan-for">Всё уже включено: экскурсии, напитки, интернет и спа на лайнере</p>
+        </div>
       </div>
-
-      <div class="plan featured">
-        <div class="plan-flag">Выбор покупателей</div>
-        <div class="plan-len">12 дней · 11 ночей</div>
-        <h3>Бесконечное лето</h3>
-        <div class="plan-dates">4–15 декабря</div>
-        <div class="plan-price">от 1 650 €</div>
-        <p class="plan-for">Вся программа и свобода планировать дни самому</p>
-        <ul class="checks">
-          <li>3 ночи в Риме, отель 4★ с завтраком</li>
-          <li>Круиз «всё включено», 6 ночей</li>
-          <li>2 ночи на Тенерифе, отель 5★ с завтраками и ужинами</li>
-          <li>Свободное время в Риме и на Тенерифе</li>
-          <li>Экскурсии по желанию*</li>
-        </ul>
-        <a class="btn" href="#zayavka" data-plan="Бесконечное лето">Выбрать</a>
+      <div class="cmp-group" role="row"><div role="cell">Перелёт</div></div>
+      <div class="cmp-row" role="row">
+        <div class="cmp-label" role="rowheader">Авиаперелёт Вильнюс — Рим и Тенерифе — Варшава</div>
+        <div class="cmp-cell" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+        <div class="cmp-cell featured" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+        <div class="cmp-cell" role="cell"><span class="yes" aria-label="включено">✓</span></div>
       </div>
-
-      <div class="plan">
-        <div class="plan-len">12 дней · 11 ночей</div>
-        <h3>Лето под ключ</h3>
-        <div class="plan-dates">4–15 декабря</div>
-        <div class="plan-price">от 1 980 €</div>
-        <p class="plan-for">Экскурсии и входные билеты уже включены</p>
-        <ul class="checks">
-          <li>3 ночи в Риме, отель 4★ с завтраком</li>
-          <li>Экскурсии по Риму и Ватикану</li>
-          <li>Круиз «всё включено», 6 ночей</li>
-          <li>2 ночи на Тенерифе, отель 5★ с завтраками и ужинами</li>
-          <li>Экскурсия по восточной части острова «Неизведанный Тенерифе», посещение Национального парка Тейде и Лоро-парка с билетами</li>
-        </ul>
-        <a class="btn" href="#zayavka" data-plan="Лето под ключ">Выбрать</a>
+      <div class="cmp-group" role="row"><div role="cell">Проживание</div></div>
+      <div class="cmp-row" role="row">
+        <div class="cmp-label" role="rowheader">Отель 4★ в Риме, завтраки</div>
+        <div class="cmp-cell" role="cell"><span class="val">1 ночь</span></div>
+        <div class="cmp-cell featured" role="cell"><span class="val">3 ночи</span></div>
+        <div class="cmp-cell" role="cell"><span class="val">3 ночи</span></div>
+      </div>
+      <div class="cmp-row" role="row">
+        <div class="cmp-label" role="rowheader">Круиз MSC Fantasia «всё включено», каюта с окном</div>
+        <div class="cmp-cell" role="cell"><span class="val">6 ночей</span></div>
+        <div class="cmp-cell featured" role="cell"><span class="val">6 ночей</span></div>
+        <div class="cmp-cell" role="cell"><span class="val">6 ночей</span></div>
+      </div>
+      <div class="cmp-row" role="row">
+        <div class="cmp-label" role="rowheader">Отель 5★ на Тенерифе, завтраки и ужины</div>
+        <div class="cmp-cell" role="cell"><span class="no" aria-label="не включено">—</span></div>
+        <div class="cmp-cell featured" role="cell"><span class="val">2 ночи</span></div>
+        <div class="cmp-cell" role="cell"><span class="val">2 ночи</span></div>
+      </div>
+      <div class="cmp-group" role="row"><div role="cell">Трансферы</div></div>
+      <div class="cmp-row" role="row">
+        <div class="cmp-label" role="rowheader">Рим → порт Чивитавеккья</div>
+        <div class="cmp-cell" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+        <div class="cmp-cell featured" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+        <div class="cmp-cell" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+      </div>
+      <div class="cmp-row" role="row">
+        <div class="cmp-label" role="rowheader">Порт → отель на Тенерифе</div>
+        <div class="cmp-cell" role="cell"><span class="no" aria-label="не включено">—</span></div>
+        <div class="cmp-cell featured" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+        <div class="cmp-cell" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+      </div>
+      <div class="cmp-row" role="row">
+        <div class="cmp-label" role="rowheader">Отель → аэропорт Тенерифе</div>
+        <div class="cmp-cell" role="cell"><span class="no" aria-label="не включено">—</span></div>
+        <div class="cmp-cell featured" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+        <div class="cmp-cell" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+      </div>
+      <div class="cmp-group" role="row"><div role="cell">Сопровождение</div></div>
+      <div class="cmp-row" role="row">
+        <div class="cmp-label" role="rowheader">Наша команда на всём маршруте, включая транспортное сопровождение</div>
+        <div class="cmp-cell" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+        <div class="cmp-cell featured" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+        <div class="cmp-cell" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+      </div>
+      <div class="cmp-group" role="row"><div role="cell">Экскурсии</div></div>
+      <div class="cmp-row" role="row">
+        <div class="cmp-label" role="rowheader">«Неизведанный Тенерифе»</div>
+        <div class="cmp-cell" role="cell"><span class="no" aria-label="не включено">—</span></div>
+        <div class="cmp-cell featured" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+        <div class="cmp-cell" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+      </div>
+      <div class="cmp-row" role="row">
+        <div class="cmp-label" role="rowheader">«Классический Рим»</div>
+        <div class="cmp-cell" role="cell"><span class="no" aria-label="не включено">—</span></div>
+        <div class="cmp-cell featured" role="cell"><span class="no" aria-label="не включено">—</span></div>
+        <div class="cmp-cell" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+      </div>
+      <div class="cmp-row" role="row">
+        <div class="cmp-label" role="rowheader">«Ватикан»</div>
+        <div class="cmp-cell" role="cell"><span class="no" aria-label="не включено">—</span></div>
+        <div class="cmp-cell featured" role="cell"><span class="no" aria-label="не включено">—</span></div>
+        <div class="cmp-cell" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+      </div>
+      <div class="cmp-row" role="row">
+        <div class="cmp-label" role="rowheader">«Тейде и Лоро-парк»</div>
+        <div class="cmp-cell" role="cell"><span class="no" aria-label="не включено">—</span></div>
+        <div class="cmp-cell featured" role="cell"><span class="no" aria-label="не включено">—</span></div>
+        <div class="cmp-cell" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+      </div>
+      <div class="cmp-group" role="row"><div role="cell">На лайнере</div></div>
+      <div class="cmp-row" role="row">
+        <div class="cmp-label" role="rowheader">Пакет напитков Easy Package</div>
+        <div class="cmp-cell" role="cell"><span class="no" aria-label="не включено">—</span></div>
+        <div class="cmp-cell featured" role="cell"><span class="no" aria-label="не включено">—</span></div>
+        <div class="cmp-cell" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+      </div>
+      <div class="cmp-row" role="row">
+        <div class="cmp-label" role="rowheader">Интернет Browse Cruise Package</div>
+        <div class="cmp-cell" role="cell"><span class="no" aria-label="не включено">—</span></div>
+        <div class="cmp-cell featured" role="cell"><span class="no" aria-label="не включено">—</span></div>
+        <div class="cmp-cell" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+      </div>
+      <div class="cmp-row" role="row">
+        <div class="cmp-label" role="rowheader">Балийский массаж, 80 минут</div>
+        <div class="cmp-cell" role="cell"><span class="no" aria-label="не включено">—</span></div>
+        <div class="cmp-cell featured" role="cell"><span class="no" aria-label="не включено">—</span></div>
+        <div class="cmp-cell" role="cell"><span class="yes" aria-label="включено">✓</span></div>
+      </div>
+      <div class="cmp-row cmp-foot" role="row">
+        <div class="cmp-label" role="cell"></div>
+        <div class="cmp-cell" role="cell"><a class="btn" href="#zayavka" data-plan="Круизный">Выбрать</a></div>
+        <div class="cmp-cell featured" role="cell"><a class="btn" href="#zayavka" data-plan="Бесконечное лето">Выбрать</a></div>
+        <div class="cmp-cell" role="cell"><a class="btn" href="#zayavka" data-plan="Лето под ключ">Выбрать</a></div>
       </div>
     </div>
-    <p class="note">* Дополнительные экскурсии оплачиваются отдельно — подробнее в разделе <a href="ekskursii.html">«Групповые экскурсии»</a>.</p>
 
-    <p class="subhead">Во всех форматах</p>
-    <div class="included">
-      <div><span class="ico"><svg><use href="#i-plane"/></svg></span>Авиаперелёт Вильнюс — Рим, Тенерифе — Варшава</div>
-      <div><span class="ico"><svg><use href="#i-ship"/></svg></span>Круиз MSC Fantasia «всё включено»</div>
-      <div><span class="ico"><svg><use href="#i-metro"/></svg></span>Отели 4★ в Риме (+ завтрак), 5★ на Тенерифе (+ завтрак и ужин)</div>
-      <div><span class="ico"><svg><use href="#i-pin"/></svg></span>Гран-Канария и Ла-Пальма по пути</div>
-      <div><span class="ico"><svg><use href="#i-road"/></svg></span>Ни одного ночного переезда</div>
-      <div><span class="ico"><svg><use href="#i-people"/></svg></span>Сопровождение нашей команды</div>
+    <div class="plan-switch" role="tablist" aria-label="Форматы тура">
+      <button type="button" role="tab" data-show="cruise" aria-selected="false">Круизный</button>
+      <button type="button" role="tab" data-show="summer" aria-selected="true">Бесконечное лето</button>
+      <button type="button" role="tab" data-show="turnkey" aria-selected="false">Лето под ключ</button>
     </div>
+    <div class="plan-card" data-plan-card="cruise" hidden>
+      <div class="plan-len">8 дней · 7 ночей</div>
+      <h3>Круизный</h3>
+      <div class="plan-dates">6–13 декабря</div>
+      <div class="plan-price">от 1 280 €</div>
+      <p class="plan-for">Для тех, кому главное — море и лайнер</p>
+      <p class="pc-group">Перелёт</p>
+      <ul class="pc-list">
+        <li class="on">Авиаперелёт Вильнюс — Рим и Тенерифе — Варшава</li>
+      </ul>
+      <p class="pc-group">Проживание</p>
+      <ul class="pc-list">
+        <li class="on">Отель 4★ в Риме, завтраки — 1 ночь</li>
+        <li class="on">Круиз MSC Fantasia «всё включено», каюта с окном — 6 ночей</li>
+        <li class="off">Отель 5★ на Тенерифе, завтраки и ужины</li>
+      </ul>
+      <p class="pc-group">Трансферы</p>
+      <ul class="pc-list">
+        <li class="on">Рим → порт Чивитавеккья</li>
+        <li class="off">Порт → отель на Тенерифе</li>
+        <li class="off">Отель → аэропорт Тенерифе</li>
+      </ul>
+      <p class="pc-group">Сопровождение</p>
+      <ul class="pc-list">
+        <li class="on">Наша команда на всём маршруте, включая транспортное сопровождение</li>
+      </ul>
+      <p class="pc-group">Экскурсии</p>
+      <ul class="pc-list">
+        <li class="off">«Неизведанный Тенерифе»</li>
+        <li class="off">«Классический Рим»</li>
+        <li class="off">«Ватикан»</li>
+        <li class="off">«Тейде и Лоро-парк»</li>
+      </ul>
+      <p class="pc-group">На лайнере</p>
+      <ul class="pc-list">
+        <li class="off">Пакет напитков Easy Package</li>
+        <li class="off">Интернет Browse Cruise Package</li>
+        <li class="off">Балийский массаж, 80 минут</li>
+      </ul>
+      <a class="btn" href="#zayavka" data-plan="Круизный">Выбрать «Круизный»</a>
+    </div>
+    <div class="plan-card featured" data-plan-card="summer">
+      <div class="plan-flag">Выбор покупателей</div>
+      <div class="plan-len">12 дней · 11 ночей</div>
+      <h3>Бесконечное лето</h3>
+      <div class="plan-dates">4–15 декабря</div>
+      <div class="plan-price">от 1 650 €</div>
+      <p class="plan-for">Вся программа и свобода планировать дни самому</p>
+      <p class="pc-group">Перелёт</p>
+      <ul class="pc-list">
+        <li class="on">Авиаперелёт Вильнюс — Рим и Тенерифе — Варшава</li>
+      </ul>
+      <p class="pc-group">Проживание</p>
+      <ul class="pc-list">
+        <li class="on">Отель 4★ в Риме, завтраки — 3 ночи</li>
+        <li class="on">Круиз MSC Fantasia «всё включено», каюта с окном — 6 ночей</li>
+        <li class="on">Отель 5★ на Тенерифе, завтраки и ужины — 2 ночи</li>
+      </ul>
+      <p class="pc-group">Трансферы</p>
+      <ul class="pc-list">
+        <li class="on">Рим → порт Чивитавеккья</li>
+        <li class="on">Порт → отель на Тенерифе</li>
+        <li class="on">Отель → аэропорт Тенерифе</li>
+      </ul>
+      <p class="pc-group">Сопровождение</p>
+      <ul class="pc-list">
+        <li class="on">Наша команда на всём маршруте, включая транспортное сопровождение</li>
+      </ul>
+      <p class="pc-group">Экскурсии</p>
+      <ul class="pc-list">
+        <li class="on">«Неизведанный Тенерифе»</li>
+        <li class="off">«Классический Рим»</li>
+        <li class="off">«Ватикан»</li>
+        <li class="off">«Тейде и Лоро-парк»</li>
+      </ul>
+      <p class="pc-group">На лайнере</p>
+      <ul class="pc-list">
+        <li class="off">Пакет напитков Easy Package</li>
+        <li class="off">Интернет Browse Cruise Package</li>
+        <li class="off">Балийский массаж, 80 минут</li>
+      </ul>
+      <a class="btn" href="#zayavka" data-plan="Бесконечное лето">Выбрать «Бесконечное лето»</a>
+    </div>
+    <div class="plan-card" data-plan-card="turnkey" hidden>
+      <div class="plan-len">12 дней · 11 ночей</div>
+      <h3>Лето под ключ</h3>
+      <div class="plan-dates">4–15 декабря</div>
+      <div class="plan-price">от 2 580 €</div>
+      <p class="plan-for">Всё уже включено: экскурсии, напитки, интернет и спа на лайнере</p>
+      <p class="pc-group">Перелёт</p>
+      <ul class="pc-list">
+        <li class="on">Авиаперелёт Вильнюс — Рим и Тенерифе — Варшава</li>
+      </ul>
+      <p class="pc-group">Проживание</p>
+      <ul class="pc-list">
+        <li class="on">Отель 4★ в Риме, завтраки — 3 ночи</li>
+        <li class="on">Круиз MSC Fantasia «всё включено», каюта с окном — 6 ночей</li>
+        <li class="on">Отель 5★ на Тенерифе, завтраки и ужины — 2 ночи</li>
+      </ul>
+      <p class="pc-group">Трансферы</p>
+      <ul class="pc-list">
+        <li class="on">Рим → порт Чивитавеккья</li>
+        <li class="on">Порт → отель на Тенерифе</li>
+        <li class="on">Отель → аэропорт Тенерифе</li>
+      </ul>
+      <p class="pc-group">Сопровождение</p>
+      <ul class="pc-list">
+        <li class="on">Наша команда на всём маршруте, включая транспортное сопровождение</li>
+      </ul>
+      <p class="pc-group">Экскурсии</p>
+      <ul class="pc-list">
+        <li class="on">«Неизведанный Тенерифе»</li>
+        <li class="on">«Классический Рим»</li>
+        <li class="on">«Ватикан»</li>
+        <li class="on">«Тейде и Лоро-парк»</li>
+      </ul>
+      <p class="pc-group">На лайнере</p>
+      <ul class="pc-list">
+        <li class="on">Пакет напитков Easy Package</li>
+        <li class="on">Интернет Browse Cruise Package</li>
+        <li class="on">Балийский массаж, 80 минут</li>
+      </ul>
+      <a class="btn" href="#zayavka" data-plan="Лето под ключ">Выбрать «Лето под ключ»</a>
+    </div>
+
+    <p class="note">Экскурсии, которые не входят в ваш формат, можно добавить по желанию: они проводятся при наборе группы от 20 человек и оплачиваются отдельно. <a href="ekskursii.html">Все экскурсии →</a></p>
 
     <div class="custom">
       <div>
         <h3>Путешествие, собранное под вас</h3>
-        <p>Задержаться в Риме, добавить дни у океана, изменить даты — мы с радостью подстроим любой формат под ваши планы. Просто расскажите о них менеджеру.</p>
+        <p>Задержаться в Риме, добавить дни у океана, изменить даты — мы с радостью подстроим любой формат под ваши планы. А ещё наши менеджеры помогут с пакетами услуг на лайнере: напитки, интернет, спа. Просто расскажите о своих планах.</p>
       </div>
       <a class="btn" href="#zayavka">Обсудить с менеджером</a>
     </div>
   </div>
 </section>
 
-<!-- ================= КАЮТЫ И ВИДЕО ================= -->
+<!-- ================= ЛАЙНЕР ================= -->
 <section id="kayuty">
   <div class="wrap">
     <div class="kayuty-top">
       <div>
         <p class="eyebrow">MSC Fantasia · 7–13 декабря</p>
-        <h2>Каюты и апгрейд</h2>
-        <p class="lead">Выберите, каким будет ваш дом на время круиза</p>
-        <p class="upgrade">Стоимость тура рассчитана на внутреннюю каюту. Возможен <b>бесплатный апгрейд</b> — повышение категории каюты по сравнению с изначальной бронью.</p>
-        <a class="more-link" href="kruiz.html">Всё о круизе: что на борту и маршрут →</a>
+        <h2>Ваш дом на время круиза</h2>
+        <p class="lead">Шесть ночей «всё включено» по пути из зимы в лето</p>
+        <div class="cabin-inc">
+          <div class="ph"><img src="images/cabin-window.jpg" alt="Каюта с окном на MSC Fantasia" loading="lazy"></div>
+          <div>
+            <span class="inc-badge">В стоимости тура</span>
+            <h4>Каюта с окном · ~18 м²</h4>
+            <p>Дневной свет и вид на океан прямо из каюты. Ванная комната, кондиционер, интерактивное ТВ, телефон, фен, мини-бар и сейф.</p>
+          </div>
+        </div>
       </div>
       <div>
         <div class="video">
@@ -227,27 +427,14 @@
       </div>
     </div>
 
-    <p class="swipe-hint">Листайте вбок →</p>
-    <div class="cabins four">
-      <div class="cabin">
-        <div class="ph"><img src="images/cabin-inside.jpg" alt="Внутренняя каюта" loading="lazy"></div>
-        <div class="cabin-body"><div class="cabin-head"><h4>Внутренняя каюта</h4><span>~17 м²</span></div><p>Уютная каюта без окна — для тех, кто проводит день на палубах и на берегу</p></div>
+    <div class="concierge">
+      <span class="ico"><svg><use href="#i-star"/></svg></span>
+      <div>
+        <h3>Особый повод? Устроим</h3>
+        <p>Наши менеджеры помогут подобрать пакеты услуг на лайнере — напитки, интернет, спа — и организовать праздник на борту: например, цветы в каюту к годовщине или дню рождения. Расскажите, что для вас важно.</p>
       </div>
-      <div class="cabin">
-        <div class="ph"><img src="images/cabin-window.jpg" alt="Каюта с окном" loading="lazy"></div>
-        <div class="cabin-body"><div class="cabin-head"><h4>Каюта с окном</h4><span>~18 м²</span></div><p>Дневной свет и вид на океан прямо из каюты</p></div>
-      </div>
-      <div class="cabin">
-        <div class="ph"><img src="images/cabin-balcony.jpg" alt="Каюта с балконом" loading="lazy"></div>
-        <div class="cabin-body"><div class="cabin-head"><h4>Каюта с балконом</h4><span>~19 м² + балкон ~4 м²</span></div><p>Утренний кофе на собственном балконе и закаты над Атлантикой</p></div>
-      </div>
-      <div class="cabin">
-        <span class="premium">ПРЕМИУМ</span>
-        <div class="ph"><img src="images/cabin-yacht.jpg" alt="Сьют MSC Yacht Club" loading="lazy"></div>
-        <div class="cabin-body"><div class="cabin-head"><h4>Сьют MSC Yacht Club</h4><span>от ~23 м², с балконом</span></div><p>«Корабль в корабле»: 71 сьют, консьерж-служба, приватные бар, лаунж, бассейн и джакузи, отдельный вход в спа</p></div>
-      </div>
+      <a class="more-link" href="kruiz.html">Всё о круизе →</a>
     </div>
-    <div class="callout"><b>Во всех каютах:</b> ванная комната, кондиционер, интерактивное ТВ, телефон, фен, мини-бар и сейф. Стоимость апгрейда рассчитает наш менеджер.</div>
   </div>
 </section>
 
@@ -260,52 +447,77 @@
 
     <div class="route-line">
       <div class="stop"><i><svg><use href="#i-plane"/></svg></i>Вильнюс</div>
-      <div class="stop"><i><svg><use href="#i-pin"/></svg></i>Рим</div>
-      <div class="stop"><i><svg><use href="#i-ship"/></svg></i>Чивитавеккья</div>
-      <div class="stop"><i><svg><use href="#i-pin"/></svg></i>Гран-Канария</div>
-      <div class="stop"><i><svg><use href="#i-pin"/></svg></i>Ла-Пальма</div>
-      <div class="stop"><i><svg><use href="#i-pin"/></svg></i>Тенерифе</div>
+      <a class="stop" href="rim.html"><i><svg><use href="#i-pin"/></svg></i>Рим</a>
+      <a class="stop" href="kruiz.html"><i><svg><use href="#i-ship"/></svg></i>Чивитавеккья</a>
+      <a class="stop" href="kanary.html"><i><svg><use href="#i-pin"/></svg></i>Гран-Канария</a>
+      <a class="stop" href="kanary.html"><i><svg><use href="#i-pin"/></svg></i>Ла-Пальма</a>
+      <a class="stop" href="kanary.html#tenerife"><i><svg><use href="#i-pin"/></svg></i>Тенерифе</a>
       <div class="stop"><i><svg><use href="#i-plane"/></svg></i>Варшава</div>
     </div>
 
     <div class="days-tools"><button type="button" id="daysToggle">Развернуть все дни</button></div>
     <div class="days">
-      <details class="day" open><summary><span class="day-date">4 декабря<small>пятница</small></span><span class="day-title">Здравствуй, Рим!</span></summary><div class="day-text"><p>Утренний рейс из Вильнюса — и уже в полдень вы в Вечном городе. Трансфер и заселение в отель 4★ у метро (ориентировочно Mercure Roma Cinecittà) — всё вместе с нашей командой. До станции 300 метров, а линия A без пересадок довезёт до центра.</p><p>Вечер — для первого знакомства с городом: рождественские огни, праздничная ярмарка на площади Навона, ёлка у собора Святого Петра.</p></div></details>
-      <details class="day"><summary><span class="day-date">5 декабря<small>суббота</small></span><span class="day-title">Рим</span></summary><div class="day-text"><p>Свободный день в Риме — каким он будет, решаете вы. Город в рождественском убранстве: гуляйте в своём ритме по праздничным улицам и площадям, где по одному кварталу можно читать историю Европы.</p><p>По желанию можно присоединиться к экскурсии «Музеи Ватикана + Сикстинская капелла»*.</p></div></details>
-      <details class="day"><summary><span class="day-date">6 декабря<small>воскресенье</small></span><span class="day-title">Рим</span></summary><div class="day-text"><p>Ещё один день в Вечном городе — для прогулок и новых открытий. Исторический центр компактен: главные места — в пределах пешей прогулки или пары остановок метро.</p><p>По желанию можно присоединиться к обзорной экскурсии по Риму с посещением Колизея, Форума, Капитолия и Трастевере*.</p></div></details>
-      <details class="day"><summary><span class="day-date">7 декабря<small>понедельник</small></span><span class="day-title">Посадка на лайнер</span></summary><div class="day-text"><p>После завтрака — переезд в порт Чивитавеккья, дорога займёт 1–1,5 часа. Наша команда поможет с посадкой — и вот вы на борту MSC Fantasia: заселение в каюту, первый ужин, вечерняя палуба.</p><p>Около 18:00 лайнер отходит от причала. Впереди шесть ночей «всё включено» и путь из зимы в лето.</p></div></details>
+      <details class="day" open><summary><span class="day-date">4 декабря<small>пятница</small></span><span class="day-title">Здравствуй, Рим!</span></summary><div class="day-text"><p>Утренний рейс из Вильнюса — и уже в полдень вы в Вечном городе. Трансфер и заселение в отель 4★ у метро (ориентировочно Mercure Roma Cinecittà) — всё вместе с нашей командой. До станции 300 метров, а линия A без пересадок довезёт до центра.</p><p>Вечер — для первого знакомства с городом: рождественские огни, праздничная ярмарка на площади Навона, ёлка у собора Святого Петра. <a class="day-more" href="rim.html">О Риме →</a></p></div></details>
+      <details class="day"><summary><span class="day-date">5 декабря<small>суббота</small></span><span class="day-title">Рим</span></summary><div class="day-text"><p>Свободный день в Риме — каким он будет, решаете вы. Город в рождественском убранстве: гуляйте в своём ритме по праздничным улицам и площадям, где по одному кварталу можно читать историю Европы.</p><p>По желанию — экскурсия «Ватикан»: Музеи Ватикана, Сикстинская капелла и собор Святого Петра*.</p></div></details>
+      <details class="day"><summary><span class="day-date">6 декабря<small>воскресенье</small></span><span class="day-title">Рим</span></summary><div class="day-text"><p>Ещё один день в Вечном городе — для прогулок и новых открытий. Исторический центр компактен: главные места — в пределах пешей прогулки или пары остановок метро.</p><p>По желанию — обзорная экскурсия «Классический Рим» или поездка в окрестности Рима — виллы Тиволи*.</p></div></details>
+      <details class="day"><summary><span class="day-date">7 декабря<small>понедельник</small></span><span class="day-title">Посадка на лайнер</span></summary><div class="day-text"><p>После завтрака — трансфер в порт Чивитавеккья, дорога займёт 1–1,5 часа. Наша команда поможет с посадкой — и вот вы на борту MSC Fantasia: заселение в каюту, первый ужин, вечерняя палуба.</p><p>Около 18:00 лайнер отходит от причала. Впереди шесть ночей «всё включено» и путь из зимы в лето. <a class="day-more" href="kruiz.html">О лайнере →</a></p></div></details>
       <details class="day"><summary><span class="day-date">8–10 декабря<small>3 дня</small></span><span class="day-title">Три дня в открытом океане</span></summary><div class="day-text"><p>Самая беззаботная часть путешествия: не нужно собирать чемоданы и никуда спешить. Вы засыпаете в каюте, а просыпаетесь всё ближе к солнцу.</p><p>Бассейны и джакузи на открытых палубах, спа, спорт-центр, детские клубы. Завтраки, обеды и ужины — шведский стол, а вечером — ужин с обслуживанием в ресторане à la carte.</p></div></details>
-      <details class="day"><summary><span class="day-date">11 декабря<small>пятница</small></span><span class="day-title">Гран-Канария</span></summary><div class="day-text"><p>Лайнер швартуется прямо в центре Лас-Пальмаса — стоянка около 09:00–20:00, целый день на острове. Самый большой город Канар и настоящий курорт: за день можно успеть и старый город, и пляж.</p><p>По желанию можно присоединиться к экскурсии по историческому центру Вегета с посещением океанариума*.</p></div></details>
+      <details class="day"><summary><span class="day-date">11 декабря<small>пятница</small></span><span class="day-title">Гран-Канария</span></summary><div class="day-text"><p>Лайнер швартуется прямо в центре Лас-Пальмаса — стоянка около 09:00–20:00, целый день на острове. Самый большой город Канар и настоящий курорт: за день можно успеть и старый город, и пляж.</p><p><a class="day-more" href="kanary.html">Об островах →</a></p></div></details>
       <details class="day"><summary><span class="day-date">12 декабря<small>суббота</small></span><span class="day-title">Ла-Пальма</span></summary><div class="day-text"><p>Свободный день на самом зелёном острове маршрута: вулканы, леса и одно из самых чистых небес в мире. Колониальный старый город начинается в нескольких минутах ходьбы от причала.</p></div></details>
-      <details class="day"><summary><span class="day-date">13 декабря<small>воскресенье</small></span><span class="day-title">Тенерифе</span></summary><div class="day-text"><p>Утром лайнер приходит в Санта-Крус-де-Тенерифе. Высадка, переезд на север острова, в курортный Пуэрто-де-ла-Крус, и заселение в отель 5★ на берегу Атлантики (ориентировочно Best Semiramis): бассейны, спа, терраса на крыше, завтраки и ужины включены. Остаток дня — у океана.</p><p>По желанию можно присоединиться к экскурсии «Неизведанный Тенерифе»: дикие берега, горы Анага и пляж с песком из Сахары*.</p></div></details>
-      <details class="day"><summary><span class="day-date">14 декабря<small>понедельник</small></span><span class="day-title">Остров вечной весны</span></summary><div class="day-text"><p>Утром — снег на вершине вулкана, днём — океан и пляж. Свободный день на Тенерифе: бассейн с видом на океан, пляжи с вулканическим песком, прогулки по Пуэрто-де-ла-Крус.</p><p>По желанию можно присоединиться к экскурсии на вулкан Тейде — высшую точку Испании — и в Лоро-парк*.</p></div></details>
+      <details class="day"><summary><span class="day-date">13 декабря<small>воскресенье</small></span><span class="day-title">Тенерифе</span></summary><div class="day-text"><p>Утром лайнер приходит в Санта-Крус-де-Тенерифе. Трансфер на север острова, в курортный Пуэрто-де-ла-Крус, и заселение в отель 5★ на берегу Атлантики (ориентировочно Best Semiramis): бассейны, спа, терраса на крыше, завтраки и ужины включены. Остаток дня — у океана.</p><p>Экскурсия «Неизведанный Тенерифе» — дикие берега, горы Анага и пляж с песком из Сахары: в форматах «Бесконечное лето» и «Лето под ключ» она уже включена. <a class="day-more" href="otely.html#tenerife-otel">Об отеле →</a></p></div></details>
+      <details class="day"><summary><span class="day-date">14 декабря<small>понедельник</small></span><span class="day-title">Остров вечной весны</span></summary><div class="day-text"><p>Утром — снег на вершине вулкана, днём — океан и пляж. Свободный день на Тенерифе: бассейн с видом на океан, пляжи с вулканическим песком, прогулки по Пуэрто-де-ла-Крус.</p><p>По желанию — экскурсия «Тейде и Лоро-парк» или «Обзорная + Маска» — для тех, кто хочет узнать о Тенерифе максимум*.</p></div></details>
       <details class="day"><summary><span class="day-date">15 декабря<small>вторник</small></span><span class="day-title">Вылет домой</span></summary><div class="day-text"><p>Свободное утро: завтрак и последний час у бассейна с видом на океан. Трансфер в аэропорт и вылет Тенерифе → Варшава.</p><p>Наша команда рядом до самой посадки на рейс. Вы возвращаетесь в декабрь — с летом внутри.</p></div></details>
     </div>
-    <p class="note">* Групповые экскурсии — по желанию, проводятся при наборе группы от 20 человек. <a href="ekskursii.html">Все экскурсии →</a><br>Программа ориентировочная: время стоянок может уточняться.</p>
+    <p class="note">* Экскурсии по желанию проводятся при наборе группы от 20 человек. Часть экскурсий уже включена в форматы «Бесконечное лето» и «Лето под ключ». <a href="ekskursii.html">Все экскурсии →</a><br>Программа ориентировочная: время стоянок может уточняться.</p>
   </div>
 </section>
 
 <!-- ================= КОМАНДА ================= -->
 <section id="komanda">
-  <div class="wrap team">
-    <div class="team-photos">
-      <div class="ph team-main"><img src="images/team-sunset.jpg" alt="Сотрудница «НеобхоДима Тревел» на палубе лайнера на закате" loading="lazy"></div>
-      <div class="ph"><img src="images/team-deck.jpg" alt="Закат на палубе лайнера" loading="lazy"></div>
-      <div class="ph"><img src="images/team-lounger.jpg" alt="Отдых на палубе лайнера" loading="lazy"></div>
+  <div class="wrap">
+    <div class="team">
+      <div class="ph team-flag"><img src="images/team-flag.jpg" alt="Группа «НеобхоДима Тревел» с флагом агентства на борту лайнера MSC" loading="lazy"></div>
+      <div class="team-text">
+        <p class="eyebrow">Сопровождение нашей команды</p>
+        <h2>Мы рядом на всём маршруте</h2>
+        <p class="intro">Мы уже возим группы в круизы — и в этот раз тоже поедем с вами. От вылета из Вильнюса до вылета с Тенерифе рядом будут наши сопровождающие: вам не нужно разбираться с трансферами, портом и заселением — вы просто отдыхаете.</p>
+        <ul class="checks">
+          <li>Поможем с визой ещё до поездки</li>
+          <li>Поможем с заселением в отели в Риме и на Тенерифе</li>
+          <li>Проведём через посадку на лайнер</li>
+          <li>Трансферы и транспортное сопровождение</li>
+          <li>Ответим на любые вопросы в пути</li>
+        </ul>
+      </div>
     </div>
-    <div class="team-text">
-      <p class="eyebrow">Сопровождение нашей команды</p>
-      <h2>Мы рядом на всём маршруте</h2>
-      <p class="intro">От вылета из Вильнюса до вылета с Тенерифе с вами будет наш представитель. Вам не нужно разбираться с трансферами, портом и заселением — вы просто отдыхаете.</p>
-      <ul class="checks">
-        <li>Поможем с визой ещё до поездки</li>
-        <li>Поможем с заселением в отели в Риме и на Тенерифе</li>
-        <li>Проведём через посадку на лайнер</li>
-        <li>Организуем трансферы</li>
-        <li>Ответим на любые вопросы в пути</li>
-      </ul>
-      <p class="caption">На фото — наша команда в круизе</p>
+
+    <p class="subhead">С вами поедут</p>
+    <div class="guides">
+      <article class="guide">
+        <div class="ph"><img src="images/guide-dmitry.jpg" alt="Дмитрий Шевченко в Риме" loading="lazy"></div>
+        <div>
+          <h3>Дмитрий Шевченко</h3>
+          <p class="guide-role">Директор «НеобхоДима Тревел»</p>
+          <p>Основатель и идейный вдохновитель компании. Тот, кто превращает «хочу в путешествие» в «вот билеты, вот виза, вот маршрут». Посетил более 30 стран и с радостью поделится личными рекомендациями и секретами, которые сделают путешествие ещё увлекательнее.</p>
+        </div>
+      </article>
+      <article class="guide">
+        <div class="ph"><img src="images/guide-tatyana.jpg" alt="Татьяна Алехнович" loading="lazy"></div>
+        <div>
+          <h3>Татьяна Алехнович</h3>
+          <p class="guide-role">Помощник директора</p>
+          <p>Координирует все процессы, связанные с организацией путешествий, и следит, чтобы ваши запросы решались быстро и качественно. В поездке — тот человек, к которому можно обратиться с любым вопросом.</p>
+        </div>
+      </article>
     </div>
+
+    <div class="team-strip">
+      <div class="ph"><img src="images/team-group.jpg" alt="Команда «НеобхоДима Тревел»" loading="lazy"></div>
+      <div class="ph"><img src="images/guide-dmitry-trevi.jpg" alt="У фонтана Треви в Риме" loading="lazy"></div>
+      <div class="ph"><img src="images/team-sunset.jpg" alt="Закат на палубе лайнера" loading="lazy"></div>
+      <div class="ph"><img src="images/team-port.jpg" alt="У борта лайнера MSC" loading="lazy"></div>
+    </div>
+    <p class="caption">Наша команда в поездках и круизах</p>
   </div>
 </section>
 
@@ -341,24 +553,28 @@
   <div class="wrap">
     <p class="eyebrow">Подробнее о поездке</p>
     <h2>Что посмотреть и где жить</h2>
-    <p class="lead">Достопримечательности, цены билетов и отели — на отдельных страницах</p>
+    <p class="lead">Города, лайнер, отели и экскурсии — на отдельных страницах</p>
 
     <div class="teasers">
       <a class="teaser" href="rim.html">
         <div class="ph"><img src="images/rome-colosseum.jpg" alt="Колизей" loading="lazy"></div>
-        <div><p class="eyebrow">4–7 декабря</p><h3>Рим</h3><p>Достопримечательности и билеты, отель 4★ у метро</p><span class="more">Подробнее →</span></div>
+        <div><p class="eyebrow">4–7 декабря</p><h3>Рим</h3><p>Рождественский Рим: что посмотреть и где гулять</p><span class="more">Подробнее →</span></div>
       </a>
       <a class="teaser" href="kruiz.html">
         <div class="ph"><img src="images/cruise-pool.jpg" alt="Палуба MSC Fantasia" loading="lazy"></div>
-        <div><p class="eyebrow">7–13 декабря</p><h3>Круиз и каюты</h3><p>MSC Fantasia «всё включено», четыре категории кают</p><span class="more">Подробнее →</span></div>
+        <div><p class="eyebrow">7–13 декабря</p><h3>Круиз</h3><p>MSC Fantasia «всё включено»: что на борту и маршрут</p><span class="more">Подробнее →</span></div>
       </a>
       <a class="teaser" href="kanary.html">
         <div class="ph"><img src="images/tenerife-teresitas.jpg" alt="Пляж Лас-Тереситас" loading="lazy"></div>
-        <div><p class="eyebrow">11–15 декабря</p><h3>Канарские острова</h3><p>Гран-Канария, Ла-Пальма, Тенерифе, отель 5★ у океана</p><span class="more">Подробнее →</span></div>
+        <div><p class="eyebrow">11–15 декабря</p><h3>Канарские острова</h3><p>Гран-Канария, Ла-Пальма и Тенерифе</p><span class="more">Подробнее →</span></div>
+      </a>
+      <a class="teaser" href="otely.html">
+        <div class="ph"><img src="images/hotel-tenerife-1.jpg" alt="Бассейн отеля на Тенерифе" loading="lazy"></div>
+        <div><p class="eyebrow">Рим и Тенерифе</p><h3>Отели</h3><p>4★ у метро в Риме и 5★ у океана на Тенерифе</p><span class="more">Подробнее →</span></div>
       </a>
       <a class="teaser" href="ekskursii.html">
         <div class="ph"><img src="images/teide.jpg" alt="Вулкан Тейде" loading="lazy"></div>
-        <div><p class="eyebrow">По желанию</p><h3>Экскурсии</h3><p>Семь групповых экскурсий с гидом</p><span class="more">Подробнее →</span></div>
+        <div><p class="eyebrow">С гидом</p><h3>Экскурсии</h3><p>Шесть экскурсий — часть уже включена в формат</p><span class="more">Подробнее →</span></div>
       </a>
       <a class="teaser" href="viza.html">
         <div class="ph"><img src="images/spanish.jpg" alt="Испанская лестница" loading="lazy"></div>
@@ -374,12 +590,12 @@
     <p class="eyebrow">Визовая поддержка</p>
     <h2>Поможем с визой</h2>
     <p class="lead">Испанский шенген для туристов без действующей визы</p>
-    <p class="intro">Нет действующей шенгенской визы — не повод отказываться от поездки. Мы поможем оформить испанскую визу: подготовим документы по туру, запишем на подачу и будем на связи на каждом шаге. Документы подаются в визовый центр Испании в Минске.</p>
+    <p class="intro">Нет действующей шенгенской визы — не повод отказываться от поездки. Мы поможем открыть испанскую визу под тур: подготовим документы, запишем на подачу и будем на связи на каждом шаге. Документы подаются в визовый центр Испании в Минске.</p>
     <div class="steps">
       <div class="step"><i>1</i><h4>Консультация</h4><p>Проверим паспорт и составим список документов под вашу ситуацию</p></div>
       <div class="step"><i>2</i><h4>Пакет документов</h4><p>Поможем с анкетой и подготовим бронь отелей, круиза и авиабилетов для консульства</p></div>
       <div class="step"><i>3</i><h4>Запись на подачу</h4><p>Запишем вас в визовый центр Испании в Минске — без записи документы не принимают</p></div>
-      <div class="step"><i>4</i><h4>Подача и биометрия</h4><p>Вы лично подаёте документы и сдаёте отпечатки пальцев, а мы следим за решением</p></div>
+      <div class="step"><i>4</i><h4>Подача документов</h4><p>Возможна подача без личного присутствия — подскажем, подходит ли вам этот вариант. Мы следим за решением</p></div>
     </div>
 
 
@@ -393,16 +609,17 @@
     <p class="eyebrow">Частые вопросы</p>
     <h2>Отвечаем заранее</h2>
     <div class="faq">
-      <details><summary>Что входит в стоимость?</summary><p>Во всех форматах: авиаперелёт Вильнюс — Рим и Тенерифе — Варшава, круиз MSC Fantasia «всё включено», отели 4★ в Риме с завтраком и 5★ на Тенерифе с завтраком и ужином, остановки на Гран-Канарии и Ла-Пальме и сопровождение нашей команды. В формате «Лето под ключ» включены ещё экскурсии и входные билеты. Состав форматов — <a href="#formaty">в разделе «Форматы и цены»</a>.</p></details>
-      <details><summary>У меня нет шенгенской визы. Успею?</summary><p>Поможем оформить испанскую визу: проверим паспорт, подготовим документы и бронь по туру, запишем на подачу в визовый центр Испании в Минске. Начинайте как можно раньше — запись бывает загружена, а консульству нужно время на рассмотрение. <a href="viza.html">Подробнее о визе и документах</a>.</p></details>
+      <details><summary>Что входит в стоимость?</summary><p>Во всех форматах: авиаперелёт Вильнюс — Рим и Тенерифе — Варшава, отель 4★ в Риме с завтраками, круиз MSC Fantasia «всё включено» в каюте с окном, трансфер в порт Чивитавеккья и сопровождение нашей команды. В «Бесконечном лете» и «Лете под ключ» добавляются отель 5★ на Тенерифе с завтраками и ужинами, трансферы на острове и экскурсии. Всё по пунктам — <a href="#formaty">в таблице форматов</a>.</p></details>
+      <details><summary>Цена указана за какую каюту?</summary><p>Цены рассчитаны на двухместное размещение в каюте с окном — с дневным светом и видом на океан.</p></details>
+      <details><summary>Какие трансферы включены?</summary><p>Во всех форматах — трансфер из Рима в порт Чивитавеккья. В «Бесконечном лете» и «Лете под ключ» ещё и трансфер из порта в отель на Тенерифе и из отеля в аэропорт.</p></details>
+      <details><summary>У меня нет шенгенской визы. Успею?</summary><p>Поможем открыть испанскую визу под тур: проверим паспорт, подготовим документы и бронь, запишем на подачу в визовый центр Испании в Минске. Возможна подача без личного присутствия — менеджер подскажет, подходит ли вам этот вариант. Начинайте как можно раньше: запись бывает загружена. <a href="viza.html">Подробнее о визе</a>.</p></details>
       <details><summary>Будут ли ночные переезды?</summary><p>Ни одного. В Рим летим самолётом из Вильнюса, дальше лайнер сам везёт вас к Канарам — отели менять не нужно, чемоданы собирать тоже.</p></details>
-      <details><summary>Как кормят?</summary><p>На лайнере — «всё включено»: завтраки, обеды и ужины в формате шведского стола и ужины с обслуживанием в ресторанах à la carte. В Риме — завтраки в отеле, на Тенерифе — полупансион: завтраки и ужины.</p></details>
-      <details><summary>В какой каюте мы поплывём?</summary><p>Стоимость тура рассчитана на внутреннюю каюту. Возможен бесплатный апгрейд — повышение категории каюты. Стоимость апгрейда до каюты с окном, с балконом или сьюта Yacht Club рассчитает менеджер.</p></details>
-      <details><summary>Экскурсии обязательны?</summary><p>Нет. Все достопримечательности можно посмотреть самостоятельно — мы указали цены входных билетов. Если наберётся 20 желающих, организуем групповые экскурсии с гидом. В формате «Лето под ключ» экскурсии уже включены. <a href="ekskursii.html">Список экскурсий</a>.</p></details>
-      <details><summary>Кто будет с нами в поездке?</summary><p>От вылета из Вильнюса до вылета с Тенерифе с вами будет наш представитель: поможет с заселением, посадкой на лайнер, трансферами и ответит на любые вопросы в пути.</p></details>
-      <details><summary>Можно продлить отдых или изменить даты?</summary><p>Да. Задержаться в Риме, добавить дни у океана, изменить даты — подстроим любой формат под ваши планы. Просто расскажите о них менеджеру.</p></details>
+      <details><summary>Как кормят?</summary><p>На лайнере — «всё включено»: завтраки, обеды и ужины в формате шведского стола и ужины с обслуживанием в ресторанах à la carte. В Риме — завтраки в отеле, на Тенерифе — завтраки и ужины.</p></details>
+      <details><summary>Экскурсии обязательны?</summary><p>Нет. В «Бесконечное лето» включена экскурсия «Неизведанный Тенерифе», в «Лето под ключ» — ещё «Классический Рим», «Ватикан» и «Тейде и Лоро-парк». Остальные экскурсии — по желанию, при наборе группы от 20 человек. <a href="ekskursii.html">Все экскурсии</a>.</p></details>
+      <details><summary>Кто будет с нами в поездке?</summary><p>От вылета из Вильнюса до вылета с Тенерифе с вами будет наш представитель: поможет с заселением, посадкой на лайнер, трансферами и ответит на любые вопросы в пути. Транспортное сопровождение тоже включено.</p></details>
+      <details><summary>Можно продлить отдых или добавить услуги?</summary><p>Да. Задержаться в Риме, добавить дни у океана, изменить даты — подстроим любой формат под ваши планы. Менеджеры помогут и с пакетами услуг на лайнере, и с праздником на борту — например, цветами в каюту.</p></details>
       <details><summary>Какая погода в декабре?</summary><p>В Риме днём 10–14 °C, рождественская атмосфера. На Канарах воздух 21–23 °C, вода 20–21 °C.</p></details>
-      <details><summary>Отели точно будут эти?</summary><p>Отели указаны ориентировочно. При бронировании возможна замена на отель аналогичной категории с сопоставимым расположением.</p></details>
+      <details><summary>Отели точно будут эти?</summary><p>Отели указаны ориентировочно. При бронировании возможна замена на отель аналогичной категории с сопоставимым расположением. <a href="otely.html">Об отелях</a>.</p></details>
     </div>
     <p class="note">Не нашли ответ? Напишите нам в <a href="https://t.me/+375447884422" target="_blank" rel="noopener">Telegram</a> или <a href="viber://chat?number=%2B375447884422">Viber</a>, или позвоните: <a href="tel:+375447884422">+375 (44) 788-44-22</a>.</p>
   </div>
@@ -414,7 +631,7 @@
     <div class="lead-text">
       <p class="eyebrow">Заявка на тур</p>
       <h2>Забронируйте место в группе</h2>
-      <p>Оставьте телефон — менеджер перезвонит, ответит на вопросы, рассчитает апгрейд каюты и поможет с визой.</p>
+      <p>Оставьте телефон — менеджер перезвонит, ответит на вопросы, подберёт пакеты услуг на лайнере и поможет с визой.</p>
       <div class="contact-line">
         <small>Телефон, Telegram, Viber</small>
         <a href="tel:+375447884422">+375 (44) 788-44-22</a>
@@ -443,7 +660,7 @@
         <select id="f-plan" name="plan">
           <option value="Бесконечное лето">Бесконечное лето — от 1 650 €</option>
           <option value="Круизный">Круизный — от 1 280 €</option>
-          <option value="Лето под ключ">Лето под ключ — от 1 980 €</option>
+          <option value="Лето под ключ">Лето под ключ — от 2 580 €</option>
           <option value="Пока не решил(а)">Пока не решил(а)</option>
         </select>
       </div>
@@ -494,7 +711,7 @@
         <a href="https://instagram.com/neobhodima_travel" target="_blank" rel="noopener">@neobhodima_travel</a>
       </div>
     </div>
-    <div class="legal">ООО «НеобхоДима Тревел» · УНП 193772332 · Программа тура ориентировочная, стоимость тура рассчитана на внутреннюю каюту.</div>
+    <div class="legal">ООО «НеобхоДима Тревел» · УНП 193772332 · Программа тура ориентировочная, цены рассчитаны на двухместное размещение в каюте с окном.</div>
   </div>
 </footer>
 
@@ -555,10 +772,15 @@
       });
     });
 
-    // Меню на телефоне закрывается после перехода к разделу этой же страницы
-    var menu = document.querySelector('.menu');
-    menu.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () { menu.open = false; });
+    // Телефон: переключатель форматов тура
+    var switches = document.querySelectorAll('.plan-switch button');
+    switches.forEach(function (b) {
+      b.addEventListener('click', function () {
+        switches.forEach(function (x) { x.setAttribute('aria-selected', x === b ? 'true' : 'false'); });
+        document.querySelectorAll('[data-plan-card]').forEach(function (c) {
+          c.hidden = c.getAttribute('data-plan-card') !== b.getAttribute('data-show');
+        });
+      });
     });
 
     // Кнопка «Выбрать» у тарифа подставляет формат в форму

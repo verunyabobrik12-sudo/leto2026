@@ -7,3 +7,7 @@ desktop.ini
 *.mov
 # Исходники фото с телефона — на сайт идут сжатые копии из images/
 IMG_*
+*.HEIC
+*.heic
+kqyrtat7*.jpg
+*.jfif
