@@ -21,15 +21,22 @@ function doPost(e) {
     }
 
     var now = new Date();
-    sheet.appendRow([
-      now,
-      p.name || '',
-      p.phone || '',
-      p.plan || '',
-      p.channel || '',
-      p.comment || '',
-      p.page || ''
-    ]);
+    // Две заявки в одну секунду не должны затереть друг друга
+    var lock = LockService.getScriptLock();
+    lock.waitLock(10000);
+    try {
+      sheet.appendRow([
+        now,
+        asText(p.name),
+        asText(p.phone),
+        asText(p.plan),
+        asText(p.channel),
+        asText(p.comment),
+        asText(p.page)
+      ]);
+    } finally {
+      lock.releaseLock();
+    }
 
     if (NOTIFY_EMAIL) {
       var body =
@@ -55,6 +62,13 @@ function doPost(e) {
     console.error(err);
     return ContentService.createTextOutput('error');
   }
+}
+
+// Таблица читает «+375 …» как число, а «=…» как формулу. Апостроф в начале
+// заставляет её сохранить значение как обычный текст.
+function asText(value) {
+  var s = String(value || '').slice(0, 2000);
+  return /^[=+\-@]/.test(s) ? "'" + s : s;
 }
 
 function doGet() {
