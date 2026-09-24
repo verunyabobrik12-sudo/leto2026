@@ -8,11 +8,17 @@
 // Куда дублировать заявки письмом. Можно указать несколько через запятую.
 var NOTIFY_EMAIL = 'ndtravel365@gmail.com';
 
+// Если скрипт создан отдельно на script.google.com (а не из меню таблицы),
+// вставьте сюда ID таблицы — часть её адреса между /d/ и /edit.
+// Если скрипт открыт из таблицы через «Расширения → Apps Script», оставьте пустым.
+var SHEET_ID = '';
+
 function doPost(e) {
   try {
     var p = (e && e.parameter) || {};
 
-    var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheets()[0];
+    var book = SHEET_ID ? SpreadsheetApp.openById(SHEET_ID) : SpreadsheetApp.getActiveSpreadsheet();
+    var sheet = book.getSheets()[0];
 
     // При первом запуске добавляем шапку таблицы
     if (sheet.getLastRow() === 0) {
