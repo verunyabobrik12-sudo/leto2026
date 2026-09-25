@@ -250,14 +250,26 @@
   })();
 </script>
 <script>
-  // Цели Метрики: звонок и мессенджеры (заявка — в скрипте формы)
-  document.addEventListener("click", function (e) {
-    var a = e.target.closest && e.target.closest("a[href]");
-    if (!a || typeof ym !== "function") return;
-    var h = a.getAttribute("href");
-    if (h.indexOf("tel:") === 0) ym(113061341, "reachGoal", "call");
-    else if (h.indexOf("t.me/") > -1 || h.indexOf("viber:") === 0) ym(113061341, "reachGoal", "messenger");
-  });
+  // Цели Метрики (идентификаторы — как в настройках целей)
+  (function () {
+    var ID = 113061341;
+    function goal(name) { if (typeof ym === "function") ym(ID, "reachGoal", name); }
+    // Страница, с которой человек пришёл с рекламы (с UTM-метками), — запоминаем на весь визит
+    try {
+      if (/[?&](utm_|yclid=)/.test(location.search) && !sessionStorage.getItem("leto_landing")) {
+        sessionStorage.setItem("leto_landing", location.href);
+      }
+    } catch (e) {}
+    document.addEventListener("click", function (e) {
+      var el = e.target.closest && e.target.closest("a[href], [data-plan]");
+      if (!el) return;
+      if (el.hasAttribute("data-plan")) { goal("format_choose"); return; }
+      var h = el.getAttribute("href");
+      if (h.indexOf("tel:") === 0) goal("phone_click");
+      else if (h.indexOf("t.me/") > -1) goal("telegram_click");
+      else if (h.indexOf("viber:") === 0) goal("viber_click");
+    });
+  })();
 </script>
 </body>
 </html>
