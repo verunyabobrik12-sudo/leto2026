@@ -1067,3 +1067,14 @@ body { font-size: 17px; }
 @media (max-width: 680px) { .plan-facts { grid-template-columns: 1fr; gap: 8px; } }
 
 .cmp-row { grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+/* Карточка каюты: фото на всю высоту, без пустых полей */
+.cabin-inc { grid-template-columns: 240px 1fr; align-items: stretch; padding: 0; overflow: hidden; }
+.cabin-inc .ph { aspect-ratio: auto; height: 100%; min-height: 200px; border-radius: 0; }
+.cabin-inc > div:last-child { padding: 18px 20px 18px 0; }
+.cabin-inc.big { padding: 0; }
+.cabin-inc.big > div:last-child { padding: 24px 28px 24px 0; }
+@media (max-width: 680px) {
+  .cabin-inc > div:last-child, .cabin-inc.big > div:last-child { padding: 0 16px 16px; }
+  .cabin-inc .ph { min-height: 190px; }
+}
