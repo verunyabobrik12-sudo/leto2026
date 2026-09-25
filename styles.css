@@ -1065,3 +1065,5 @@ body { font-size: 17px; }
 .plan-small b { color: var(--navy); font-weight: 600; }
 @media (max-width: 900px) { .plan-small { text-align: left; } }
 @media (max-width: 680px) { .plan-facts { grid-template-columns: 1fr; gap: 8px; } }
+
+.cmp-row { grid-template-columns: 1fr 1fr 1fr 1fr; }
