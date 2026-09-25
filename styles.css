@@ -1061,5 +1061,6 @@ body { font-size: 17px; }
 .plan-facts b { display: block; color: var(--navy); font-size: 16px; }
 .plan-facts span { color: var(--muted); font-size: 14.5px; }
 .plan-facts a { color: var(--terra); }
-.plan-small { font-size: 13px; color: var(--muted); margin: 10px 0 0; }
+.plan-small { font-size: 13px; color: var(--muted); margin: 12px 0 0; text-align: right; }
+@media (max-width: 900px) { .plan-small { text-align: left; } }
 @media (max-width: 680px) { .plan-facts { grid-template-columns: 1fr; gap: 8px; } }
