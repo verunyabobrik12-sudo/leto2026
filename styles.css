@@ -1054,3 +1054,12 @@ body { font-size: 17px; }
   .cabin-other-title { font-size: 22px; }
   .cabin-other figure { min-height: 130px; }
 }
+
+/* Условия под тарифами — компактной строкой */
+.plan-facts { list-style: none; padding: 0; margin: 24px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.plan-facts li { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; }
+.plan-facts b { display: block; color: var(--navy); font-size: 16px; }
+.plan-facts span { color: var(--muted); font-size: 14.5px; }
+.plan-facts a { color: var(--terra); }
+.plan-small { font-size: 13px; color: var(--muted); margin: 10px 0 0; }
+@media (max-width: 680px) { .plan-facts { grid-template-columns: 1fr; gap: 8px; } }
