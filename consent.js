@@ -21,7 +21,17 @@
     try { localStorage.setItem(KEY, JSON.stringify({ analytics: !!analytics, date: Date.now() })); } catch (e) {}
   }
 
+  // Страница входа с рекламы (UTM-метки) — запоминаем на время визита, только с согласия на аналитику
+  function rememberLanding() {
+    try {
+      if (/[?&](utm_|yclid=)/.test(location.search) && !sessionStorage.getItem("leto_landing")) {
+        sessionStorage.setItem("leto_landing", location.href);
+      }
+    } catch (e) {}
+  }
+
   function loadMetrika() {
+    rememberLanding();
     (function (m, e, t, r, i, k, a) {
       m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments); };
       m[i].l = 1 * new Date();
@@ -77,7 +87,7 @@
       saveChoice(analytics);
       box.hidden = true;
       if (analytics && !(before && before.analytics)) loadMetrika();
-      if (!analytics && before && before.analytics) { dropMetrikaCookies(); location.reload(); }
+      if (!analytics && before && before.analytics) { dropMetrikaCookies(); try { sessionStorage.removeItem("leto_landing"); } catch (e) {} location.reload(); }
     }
 
     box.querySelector('.cookie-accept').addEventListener('click', function () { apply(true); });

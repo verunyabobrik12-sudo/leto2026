@@ -1117,3 +1117,9 @@ body { font-size: 17px; }
 }
 
 .agree a { color: inherit; text-decoration: underline; }
+
+/* Таблица cookie на странице политики */
+.table-scroll { overflow-x: auto; margin: 6px 0 16px; }
+.cookie-table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: 14.5px; line-height: 1.5; }
+.cookie-table th, .cookie-table td { border: 1px solid var(--line); padding: 8px 10px; vertical-align: top; text-align: left; }
+.cookie-table th { background: var(--cream); color: var(--navy); font-weight: 600; }

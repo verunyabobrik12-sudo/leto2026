@@ -11,8 +11,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=202609262326">
-<script src="consent.js?v=1790453138"></script>
+<link rel="stylesheet" href="styles.css?v=202609270038">
+<script src="consent.js?v=202609270038"></script>
 </head>
 <body>
 
@@ -161,12 +161,6 @@
   (function () {
     var ID = 113061341;
     function goal(name) { if (typeof ym === "function") ym(ID, "reachGoal", name); }
-    // Страница, с которой человек пришёл с рекламы (с UTM-метками), — запоминаем на весь визит
-    try {
-      if (/[?&](utm_|yclid=)/.test(location.search) && !sessionStorage.getItem("leto_landing")) {
-        sessionStorage.setItem("leto_landing", location.href);
-      }
-    } catch (e) {}
     document.addEventListener("click", function (e) {
       var el = e.target.closest && e.target.closest("a[href], [data-plan]");
       if (!el) return;
