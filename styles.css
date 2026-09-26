@@ -1078,3 +1078,40 @@ body { font-size: 17px; }
   .cabin-inc > div:last-child, .cabin-inc.big > div:last-child { padding: 0 16px 16px; }
   .cabin-inc .ph { min-height: 190px; }
 }
+
+/* ================= COOKIE: ПЛАШКА И ПОЛИТИКА ================= */
+.cookie {
+  position: fixed; left: 24px; bottom: 24px; z-index: 150; width: min(520px, calc(100% - 48px));
+  background: var(--paper); color: var(--text); border-radius: 14px; padding: 18px 20px;
+  box-shadow: 0 18px 50px rgba(22,38,63,.25); border: 1px solid var(--line);
+}
+.cookie[hidden] { display: none; }
+.cookie-text { margin: 0 0 12px; font-size: 14.5px; line-height: 1.55; }
+.cookie-text a { color: var(--terra); }
+.cookie-settings { margin: 0 0 12px; display: grid; gap: 8px; }
+.cookie-settings[hidden] { display: none; }
+.cookie-opt { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: var(--muted); }
+.cookie-opt b { color: var(--navy); }
+.cookie-opt input { margin-top: 4px; accent-color: var(--terra); }
+.cookie-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.cookie-actions .btn { padding: 11px 20px; font-size: 14.5px; }
+.cookie-actions [hidden] { display: none; }
+.cookie-btn {
+  border: 1.5px solid var(--line); background: transparent; border-radius: 8px; padding: 10px 16px;
+  font: 600 14.5px var(--sans); color: var(--navy); cursor: pointer;
+}
+.cookie-btn:hover { border-color: var(--navy); }
+.legal a { color: rgba(255,255,255,.75); }
+
+.policy { padding-top: 40px; }
+.policy .wrap { max-width: 860px; }
+.policy h1 { font-size: clamp(30px, 4vw, 42px); margin-bottom: 8px; }
+.policy h2 { font-size: 24px; margin: 34px 0 10px; }
+.policy p, .policy li { font-size: 16.5px; line-height: 1.7; }
+.policy ul { padding-left: 20px; }
+.policy li { margin-bottom: 10px; }
+.policy a { color: var(--terra); }
+
+@media (max-width: 680px) {
+  .cookie { left: 12px; right: 12px; width: auto; bottom: 76px; padding: 14px 16px; }
+}
