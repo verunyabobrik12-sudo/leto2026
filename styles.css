@@ -1115,3 +1115,5 @@ body { font-size: 17px; }
 @media (max-width: 680px) {
   .cookie { left: 12px; right: 12px; width: auto; bottom: 76px; padding: 14px 16px; }
 }
+
+.agree a { color: inherit; text-decoration: underline; }
