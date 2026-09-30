@@ -1127,3 +1127,11 @@ body { font-size: 17px; }
 .cookie-table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: 14.5px; line-height: 1.5; }
 .cookie-table th, .cookie-table td { border: 1px solid var(--line); padding: 8px 10px; vertical-align: top; text-align: left; }
 .cookie-table th { background: var(--cream); color: var(--navy); font-weight: 600; }
+
+/* Акция: старая цена зачёркнута красным, рядом процент скидки */
+.old-price { display: flex; align-items: center; gap: 8px; margin-top: 12px; font-size: 17px; color: var(--muted); }
+.old-price s { text-decoration-color: #d62828; text-decoration-thickness: 2px; }
+.old-price + .cmp-price { margin-top: 6px; }
+.old-price + .plan-price { margin-top: 2px; }
+.sale-tag { background: #d62828; color: #fff; font-size: 12px; font-weight: 700; line-height: 1; padding: 4px 7px; border-radius: 6px; }
+.sale-note { color: #d62828; }
