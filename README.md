@@ -79,15 +79,19 @@
 | `lapalma.jpg` | Санта-Крус-де-ла-Пальма | Pexels |
 | `tenerife-coast.jpg` | Пуэрто-де-ла-Крус и Тейде | Pexels |
 | `tenerife-teresitas.jpg` | Пляж Лас-Тереситас | Pexels |
-| `masca.jpg` | Деревня Маска, Тенерифе | Викисклад, Tupungato, CC BY 3.0 |
-| `tivoli.jpg` | Вилла д’Эсте, Тиволи | Викисклад, Cruz.croce, CC BY-SA 4.0 |
+| `rome-december.jpg` | Рождественская Виа Кондотти (2026-09-30) | от заказчицы |
+| `fantasia-ship.jpg`, `fantasia-atrium.jpg` | MSC Fantasia: нос лайнера, атриум | от заказчицы |
+| `cruise-sunset.jpg` | Закат с палубы | от заказчицы |
+| `laspalmas.jpg`, `lapalma-balconies.jpg` | Лас-Пальмас; балконы Санта-Крус-де-ла-Пальмы | от заказчицы |
+| `teide-sunset.jpg`, `beach-jardin-new.avif`, `lago-martianez.jpg`, `beach-bollullo.jpg` | Тейде; пляжи Тенерифе | от заказчицы |
+| `tenerife-north.jpg`, `garachico.jpg`, `msc-deck-new.webp` | Запасные (msc-deck — похоже, не MSC) | от заказчицы |
 
 **Фото отелей** (от заказчицы, исходники — в папке `hotels/`). На странице по пять снимков на отель:
 
 - Рим, Mercure Roma Cinecittà: `hotel-rome-2.jpg` — фасад (большое фото), `hotel-rome-1.jpg` — номер, `hotel-rome-3.jpg` — номер с телевизором, `hotel-rome-4.jpg` — завтрак, `hotel-rome-6.jpg` — тренажёрный зал. `hotel-rome-5.jpg` (выпечка) — запасной.
 - Тенерифе, Best Semiramis: `hotel-tenerife-1.jpg` — бассейн (большое фото), `-2` — вид с балкона, `-3` — номер, `-4` — ресторан, `-5` — лобби. `hotel-tenerife-6.jpg` (тренажёрный зал) — запасной.
 
-**Фото экскурсий:** `pantheon`, `vatican`, `lalaguna`, `teide`, `anaga`, `masca`, `tivoli`; `camels`, `wine` — запасные; в Риме — `trevi`, `spanish`, `rome-navona`; пляж — `beach-jardin`. `parrot.jpg` — запасной (Лоро-парк).
+**Фото экскурсий:** `pantheon`, `vatican`, `lalaguna`, `teide`, `anaga`; `camels`, `wine` — запасные; в Риме — `trevi`, `spanish`, `rome-navona`; пляж — `beach-jardin`. `parrot.jpg` — запасной (Лоро-парк).
 
 Если какого-то файла нет, на его месте видна мягкая серо-голубая заливка — страница не ломается.
 
