@@ -10,8 +10,10 @@
 <meta property="og:image" content="images/hero-ship.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=202609270038">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=202610022140">
+<script>document.documentElement.className += " js";</script>
+<script src="motion.js?v=202610022140" defer></script>
 <script src="consent.js?v=202609270038"></script>
 </head>
 <body>
@@ -58,14 +60,30 @@
   <div class="wrap">
     <p class="eyebrow">4–7 декабря</p>
     <h2>Рим</h2>
-    <p class="lead">Вечный город в рождественском убранстве</p>
+    <p class="lead">Вечный город накануне Рождества</p>
 
     <div class="ph wide-photo"><img src="images/rome-december.jpg" alt="Рождественская иллюминация на Виа Кондотти, вдали — Испанская лестница" loading="lazy"></div>
     <p class="caption">Рождественская Виа Кондотти, вдали — Испанская лестница</p>
 
-    <p class="intro">Город, где по одному кварталу можно читать историю Европы — от Древнего Рима до барокко. Исторический центр входит в список Всемирного наследия ЮНЕСКО и компактен: главные места — в пределах пешей прогулки или пары остановок метро. В декабре Рим украшен рождественскими огнями, а на площади Навона, как правило, уже с 1 декабря работает праздничная ярмарка.</p>
+    <div class="feel">
+      <div class="reveal">
+        <p class="quote">Рим в начале декабря — это не снег и не огни до неба. Это предвкушение.</p>
+        <p>Днём +10…+14 °C, пальто нараспашку. На площади Навона, как правило, уже с 1 декабря шумит ярмарка: ёлка, прилавки со сладостями, жареные каштаны в бумажном кульке. Подъезды и витрины — в хвое, венках и красных бантах.</p>
+        <p>Гуляйте от фонтана к фонтану, заходите в тратторию, где пасту приносят через десять минут, и поднимайте бокал — за то, что вы здесь, и за лето, которое ждёт впереди.</p>
+      </div>
+      <div class="ph slides reveal" aria-label="Рим в начале декабря: фотографии">
+        <figure class="on"><img src="images/emo-rome-steps.jpg" alt="Улица у Испанской лестницы в праздничных украшениях, прохожие под зонтами" loading="lazy"><figcaption><span>Испанская лестница</span>Город наряжается к Рождеству</figcaption></figure>
+        <figure><img src="images/emo-navona-market.jpg" alt="Ярмарка на площади Навона: ёлка, прилавки и люди" loading="lazy" style="object-position: center 88%;"><figcaption><span>Площадь Навона</span>Ярмарка, ёлка и жареные каштаны</figcaption></figure>
+        <figure><img src="images/emo-rome-door.jpg" alt="Вход в римский отель, украшенный хвоей и красными шарами" loading="lazy" style="object-position: center 70%;"><figcaption><span>Улицы Рима</span>Хвоя, венки и красные шары</figcaption></figure>
+        <figure><img src="images/emo-rome-toast.jpg" alt="Друзья чокаются бокалами красного вина над пастой и пиццей" loading="lazy"><figcaption><span>Ужин</span>«За нас!»</figcaption></figure>
+        <figure><img src="images/emo-rome-friends.jpg" alt="Компания туристов улыбается у стен Колизея" loading="lazy" style="object-position: center 48%;"><figcaption><span>Колизей</span>Своей компанией</figcaption></figure>
+        <figure><img src="images/emo-rome-umbrella.jpg" alt="Пара под одним зонтом у Колизея" loading="lazy" style="object-position: center 60%;"><figcaption><span>Колизей</span>Один зонт на двоих</figcaption></figure>
+      </div>
+    </div>
 
-    <div class="video" style="margin-top:32px"><iframe src="https://www.youtube-nocookie.com/embed/oSexfR0Ubzw" title="Rome in 4K" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+    <p class="intro">Город, где по одному кварталу можно читать историю Европы — от Древнего Рима до барокко. Исторический центр входит в список Всемирного наследия ЮНЕСКО и компактен: главные места — в пределах пешей прогулки или пары остановок метро.</p>
+
+    <div class="video yt-lazy" data-id="oSexfR0Ubzw" style="margin-top:32px"><button type="button" aria-label="Смотреть видео: Рим"><img src="https://i.ytimg.com/vi/oSexfR0Ubzw/maxresdefault.jpg" alt="" loading="lazy"><span class="yt-play"></span></button></div>
     <p class="caption">Видео: Rome in 4K · Around The World 4K</p>
 
     <p class="subhead">Что посмотреть</p>
@@ -80,8 +98,8 @@
 
     <div class="trio">
       <div><div class="ph"><img src="images/trevi.jpg" alt="Фонтан Треви" loading="lazy"></div><p class="caption">Фонтан Треви</p></div>
-      <div><div class="ph"><img src="images/spanish.jpg" alt="Испанская лестница" loading="lazy"></div><p class="caption">Испанская лестница</p></div>
-      <div><div class="ph"><img src="images/rome-navona.jpg" alt="Площадь Навона" loading="lazy"></div><p class="caption">Площадь Навона</p></div>
+      <div><div class="ph"><img src="images/tour-vatican.jpg" alt="Собор Святого Петра и рождественская ель на площади" loading="lazy"></div><p class="caption">Собор Святого Петра: на площади уже стоит ель</p></div>
+      <div><div class="ph"><img src="images/tour-rome.jpg" alt="Улочка в центре Рима: кафе в хвойных гирляндах с красными бантами" loading="lazy" style="object-position: center 70%;"></div><p class="caption">Улочки центра в хвойных гирляндах</p></div>
     </div>
 
     <a class="more-link" href="otely.html#rim-otel">Где живём в Риме: отель 4★ у метро →</a>

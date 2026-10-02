@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=202609270038">
+<link rel="stylesheet" href="styles.css?v=202610022140">
 <script src="consent.js?v=202609270038"></script>
 </head>
 <body>
@@ -63,7 +63,7 @@
 
     <div class="tours tours-full">
       <article class="tour">
-        <div class="ph"><img src="images/rome-colosseum.jpg" alt="Классический Рим" loading="lazy"></div>
+        <div class="ph"><img src="images/tour-rome.jpg" alt="Классический Рим" loading="lazy"></div>
         <div>
           <div class="tour-tags"><span class="opt-badge">По желанию</span></div>
           <h4>Классический Рим</h4>
@@ -72,7 +72,7 @@
         </div>
       </article>
       <article class="tour">
-        <div class="ph"><img src="images/vatican.jpg" alt="Ватикан" loading="lazy"></div>
+        <div class="ph"><img src="images/tour-vatican.jpg" alt="Ватикан" loading="lazy"></div>
         <div>
           <div class="tour-tags"><span class="opt-badge">По желанию</span></div>
           <h4>Ватикан</h4>
@@ -81,7 +81,7 @@
         </div>
       </article>
       <article class="tour">
-        <div class="ph"><img src="images/anaga.jpg" alt="Неизведанный Тенерифе" loading="lazy"></div>
+        <div class="ph"><img src="images/tour-anaga.jpg" alt="Неизведанный Тенерифе" loading="lazy"></div>
         <div>
           <div class="tour-tags"><span class="inc-badge">Включена в «Бесконечное лето»</span><span class="inc-badge">Включена в «Лето под ключ»</span></div>
           <h4>Неизведанный Тенерифе</h4>
@@ -210,6 +210,7 @@
     document.querySelectorAll('[data-yt]').forEach(function (b) {
       b.addEventListener('click', function (e) {
         e.preventDefault();
+        if (location.protocol === 'file:') { window.open('https://www.youtube.com/watch?v=' + b.getAttribute('data-yt'), '_blank'); return; }
         frame.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + b.getAttribute('data-yt') +
           '?autoplay=1&rel=0&playsinline=1" title="Видео" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
         box.querySelector('.vbox-credit').textContent = b.getAttribute('data-credit') || '';

@@ -14,3 +14,5 @@ kqyrtat7*.jpg
 fonts-preview.html
 шрифты-варианты.png
 banner/
+# Короткие фоновые видео сайта (до 5 МБ) — в репозитории
+!video/*.mp4

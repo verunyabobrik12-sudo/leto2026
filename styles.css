@@ -1135,3 +1135,138 @@ body { font-size: 17px; }
 .old-price + .plan-price { margin-top: 2px; }
 .sale-tag { background: #d62828; color: #fff; font-size: 12px; font-weight: 700; line-height: 1; padding: 4px 7px; border-radius: 6px; }
 .sale-note { color: #d62828; }
+
+/* ---------- ЭМОЦИИ: живые фото, видео-полоса, движение (2026-10-02) ---------- */
+.hand { font-family: "Caveat", "Segoe Script", cursive; font-weight: 600; }
+
+/* Мозаика «Что вы привезёте домой» */
+.moments-sec { background: var(--paper); }
+.moments-sec h2 em { color: var(--terra); font-style: italic; }
+.moments {
+  display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 250px;
+  gap: 14px; margin-top: 36px;
+}
+.mo { margin: 0; }
+.mo.big { grid-column: span 2; grid-row: span 2; }
+.mo.tall { grid-row: span 2; }
+.mo.wide { grid-column: span 2; }
+.mo figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 56px 18px 14px;
+  background: linear-gradient(transparent, rgba(16,24,40,.82));
+  color: #fff; font-family: "Caveat", "Segoe Script", cursive; font-weight: 600;
+  font-size: 25px; line-height: 1.08;
+}
+.mo figcaption span {
+  display: block; font-family: var(--sans); font-size: 11.5px; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--sun); margin-bottom: 5px;
+}
+.mo.big figcaption { font-size: 34px; padding: 80px 24px 20px; }
+.moments-note { font-size: 14px; color: var(--muted); margin-top: 14px; }
+.moments-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 30px; }
+.moments-cta p { margin: 0; font-family: "Caveat", "Segoe Script", cursive; font-weight: 600; font-size: 30px; line-height: 1.1; color: var(--navy); }
+
+/* Ряд «моментов» на страницах подробностей */
+.mo-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 32px; }
+.mo-row .mo { aspect-ratio: 3 / 4; }
+.mo-row.three { grid-template-columns: repeat(3, 1fr); }
+.mo-row .mo figcaption { font-size: 23px; }
+
+/* Текст + живое видео рядом */
+.feel { display: grid; grid-template-columns: 1.05fr 1fr; gap: 40px; align-items: center; margin-top: 40px; }
+.feel p { font-size: 18px; }
+.feel .quote { font-family: "Caveat", "Segoe Script", cursive; font-weight: 600; font-size: 34px; line-height: 1.1; color: var(--terra); margin: 0 0 16px; }
+.feel .ph { aspect-ratio: 16 / 10; }
+.feel video { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* Видео-полоса во всю ширину */
+.vband { position: relative; padding: 0; min-height: min(78vh, 620px); display: flex; align-items: flex-end; background: var(--navy); overflow: hidden; }
+.vband video, .vband .vband-poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.vband::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(16,24,40,.12) 15%, rgba(16,24,40,.84)); }
+.vband .wrap { position: relative; z-index: 1; width: 100%; padding-top: 120px; padding-bottom: 56px; color: #fff; }
+.vband .eyebrow { color: var(--peach); }
+.vband h2 { color: #fff; max-width: 760px; }
+.vband h2 em { color: var(--peach); font-style: italic; }
+.vband p { font-size: 19px; max-width: 620px; margin: 18px 0 28px; color: rgba(255,255,255,.9); }
+
+/* Движение: плавное появление, лёгкий зум фото */
+.js .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
+.js .reveal.in { opacity: 1; transform: none; }
+.js .moments .reveal:nth-child(2), .js .mo-row .reveal:nth-child(2) { transition-delay: .08s; }
+.js .moments .reveal:nth-child(3), .js .mo-row .reveal:nth-child(3) { transition-delay: .16s; }
+.js .moments .reveal:nth-child(4), .js .mo-row .reveal:nth-child(4) { transition-delay: .24s; }
+.mo img, .strip figure img, .teaser .ph img, .hotel-card .ph img, .trio .ph img { transition: transform .9s ease; }
+.mo:hover img, .strip figure:hover img, .teaser:hover .ph img, .hotel-card:hover .ph img, .trio .ph:hover img { transform: scale(1.05); }
+@keyframes slowzoom { from { transform: scale(1); } to { transform: scale(1.09); } }
+.hero-half img { animation: slowzoom 16s ease-in-out infinite alternate; }
+.hero-half.ship img { animation-delay: -5s; }
+.hero-half.summer img { animation-delay: -10s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+  .hero-half img { animation: none; }
+  .mo img, .strip figure img, .teaser .ph img, .hotel-card .ph img, .trio .ph img { transition: none; }
+}
+
+@media (max-width: 900px) {
+  .moments { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 220px; }
+  .mo.tall { grid-row: span 2; }
+  .feel { grid-template-columns: 1fr; gap: 24px; }
+  .mo-row { grid-template-columns: repeat(2, 1fr); }
+  .mo-row.three { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 680px) {
+  .moments { gap: 8px; grid-auto-rows: 180px; margin-top: 24px; }
+  .mo figcaption { font-size: 20px; padding: 40px 12px 10px; }
+  .mo figcaption span { font-size: 9.5px; margin-bottom: 3px; }
+  .mo.big figcaption { font-size: 26px; padding: 60px 14px 14px; }
+  .moments-cta p { font-size: 25px; }
+  .mo-row, .mo-row.three { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; margin-left: -16px; margin-right: -16px; padding: 0 16px; gap: 10px; scrollbar-width: none; }
+  .mo-row::-webkit-scrollbar { display: none; }
+  .mo-row .mo { flex: 0 0 66%; scroll-snap-align: start; }
+  .feel p { font-size: 16px; }
+  .feel .quote { font-size: 28px; }
+  .vband { min-height: 74vh; }
+  .vband .wrap { padding-bottom: 36px; }
+  .vband p { font-size: 17px; }
+}
+
+/* Видео YouTube по нажатию: сначала обложка, плеер — после клика */
+.yt-lazy button { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; padding: 0; cursor: pointer; background: #000; }
+.yt-lazy button img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.yt-lazy button:hover img { transform: scale(1.03); }
+.yt-lazy .yt-play { width: 84px; height: 84px; }
+.yt-lazy .yt-play::after { left: 34px; top: 26px; border-left-width: 24px; border-top-width: 16px; border-bottom-width: 16px; }
+
+/* Живая смена фото (вместо видео) */
+.slides figure { position: absolute; inset: 0; margin: 0; opacity: 0; transition: opacity 1.4s ease; }
+.slides figure.on { opacity: 1; }
+.slides img { transform: scale(1.02); transition: transform 7s ease-out; }
+.slides figure.on img { transform: scale(1.12); }
+.slides figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 60px 20px 16px;
+  background: linear-gradient(transparent, rgba(16,24,40,.82)); color: #fff;
+  font-family: "Caveat", "Segoe Script", cursive; font-weight: 600; font-size: 28px; line-height: 1.08;
+}
+.slides figcaption span { display: block; font-family: var(--sans); font-size: 11.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--sun); margin-bottom: 5px; }
+.feel .slides { aspect-ratio: 4 / 3; }
+@media (prefers-reduced-motion: reduce) { .slides img, .slides figure.on img { transform: none; transition: none; } }
+
+/* Короткие вертикальные видео MSC (играют без звука, когда до них долистали) */
+.reels { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 24px; }
+.reel { position: relative; margin: 0; aspect-ratio: 3 / 4; }
+@media (max-width: 900px) { .reels { grid-template-columns: repeat(2, 1fr); } }
+.reel img, .reel video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.reel figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; padding: 56px 16px 14px;
+  background: linear-gradient(transparent, rgba(16,24,40,.82)); color: #fff;
+  font-family: "Caveat", "Segoe Script", cursive; font-weight: 600; font-size: 25px; line-height: 1.08;
+}
+@media (max-width: 680px) {
+  .reels { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 10px; margin-left: -16px; margin-right: -16px; padding: 0 16px; scrollbar-width: none; }
+  .reels::-webkit-scrollbar { display: none; }
+  .reel { flex: 0 0 62%; scroll-snap-align: start; }
+}
+
+/* Телефон: блок о лайнере не должен распирать страницу по ширине */
+.kayuty-top > * { min-width: 0; }
+@media (max-width: 680px) { .cabin-inc, .cabin-inc.big { grid-template-columns: 1fr; } }

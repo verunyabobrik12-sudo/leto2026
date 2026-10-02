@@ -74,7 +74,7 @@
 | `cabin-inside.jpg` | Внутренняя каюта | msccruises.com, официальное |
 | `cabin-window.jpg` | Каюта с окном | msccruises.com, официальное |
 | `cabin-balcony.jpg` | Каюта с балконом | msccruises.com, официальное |
-| `cabin-yacht.jpg` | Сьют MSC Yacht Club | msccruises.com, официальное |
+| `cabin-yacht.jpg` | Ресторан-лаунж MSC Yacht Club (не сьют) | msccruises.com, официальное |
 | `grancanaria.jpg` | Лас-Пальмас | Pexels |
 | `lapalma.jpg` | Санта-Крус-де-ла-Пальма | Pexels |
 | `tenerife-coast.jpg` | Пуэрто-де-ла-Крус и Тейде | Pexels |
@@ -85,6 +85,18 @@
 | `laspalmas.jpg`, `lapalma-balconies.jpg` | Лас-Пальмас; балконы Санта-Крус-де-ла-Пальмы | от заказчицы |
 | `teide-sunset.jpg`, `beach-jardin-new.avif`, `lago-martianez.jpg`, `beach-bollullo.jpg` | Тейде; пляжи Тенерифе | от заказчицы |
 | `tenerife-north.jpg`, `garachico.jpg`, `msc-deck-new.webp` | Запасные (msc-deck — похоже, не MSC) | от заказчицы |
+
+**Фото с людьми (2026-10-02), все с префиксом `emo-`:**
+
+| Файл | Что на фото | Источник |
+|---|---|---|
+| `emo-teide-toast.jpg`, `emo-teide-toast-two.jpg`, `emo-teide-couple.jpg`, `emo-teide-road.jpg`, `emo-teide-road-wide.jpg`, `emo-beach-smile.jpg` | Закат над облаками на Тейде, дорога к вулкану, пляж | личные фото эксперта по маркетингу, с её разрешения |
+| `emo-rome-steps.jpg`, `emo-rome-door.jpg`, `emo-navona-market.jpg`, `emo-rome-friends.jpg`, `emo-rome-toast.jpg`, `emo-rome-umbrella.jpg` | Рим: люди, ярмарка на Навоне, украшенные улицы | Pexels (id 36610296, 36462208, 32867251, 36658288, 6223232, 36595943) |
+| `tour-rome.jpg`, `tour-vatican.jpg`, `tour-anaga.jpg` | Экскурсии: декабрьская улочка Рима в гирляндах, собор Святого Петра с ёлкой, горы Анага | Pexels (id 35607162, 38238948, 10862462) |
+| `msc-pools.jpg`, `msc-pool.jpg`, `msc-kids.jpg`, `msc-theatre.jpg` | MSC Fantasia: палуба с бассейнами, детский клуб, театр | PAC Group, Яндекс.Диск «MSC Cruises_фото лайнеров» |
+| `msc-couple-board.jpg`, `msc-girl-pool.jpg`, `msc-v-*.jpg`, `video/msc-*.mp4` | Гости на лайнерах MSC: фото и короткие видео | PAC Group, Яндекс.Диск «MSC Cruises_контент для соцсетей» |
+| `emo-tenerife-walk.jpg` | Пара на чёрном песке, Тенерифе | Pexels (id 14887616) |
+| `video/tenerife-coast.mp4` | Побережье Пуэрто-де-ла-Крус | Pexels Videos (id 19821143) |
 
 **Фото отелей** (от заказчицы, исходники — в папке `hotels/`). На странице по пять снимков на отель:
 

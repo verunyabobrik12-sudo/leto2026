@@ -10,8 +10,10 @@
 <meta property="og:image" content="images/hero-ship.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=202609270038">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=202610022140">
+<script>document.documentElement.className += " js";</script>
+<script src="motion.js?v=202610022140" defer></script>
 <script src="consent.js?v=202609270038"></script>
 </head>
 <body>
@@ -59,7 +61,7 @@
     <div class="island">
       <div class="ph"><img src="images/laspalmas.jpg" alt="Лас-Пальмас, Гран-Канария: собор Санта-Ана и океан" loading="lazy"></div>
       <div class="island-title"><h2>Гран-Канария</h2><p class="eyebrow">11 декабря · Лас-Пальмас</p></div>
-      <div class="video" style="margin-top:32px"><iframe src="https://www.youtube-nocookie.com/embed/Toon9VARRIU" title="Gran Canaria 4K" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+      <div class="video yt-lazy" data-id="Toon9VARRIU" style="margin-top:32px"><button type="button" aria-label="Смотреть видео: Гран-Канария"><img src="https://i.ytimg.com/vi/Toon9VARRIU/maxresdefault.jpg" alt="" loading="lazy"><span class="yt-play"></span></button></div>
       <p class="caption">Видео: Gran Canaria 4K · Gaëtan Piolot</p>
       <p>Самый большой город Канар и настоящий курорт: лайнер швартуется прямо в центре, и за день стоянки можно успеть и старый город, и пляж.</p>
       <div class="sights">
@@ -94,7 +96,29 @@
 
     <p class="intro">Остров вечной весны. Лайнер приходит в Санта-Крус утром 13 декабря, после высадки — переезд на север, в курортный Пуэрто-де-ла-Крус. Дальше — свободное время: колониальная Ла-Лагуна, вулкан Тейде, Лоро-парк, пляжи и старинная Ла-Оротава, самостоятельно или с экскурсией по желанию.</p>
 
-    <div class="video" style="margin-top:32px"><iframe src="https://www.youtube-nocookie.com/embed/FRRRJ9oJN6E" title="A Dream from Tenerife" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+    <div class="feel">
+      <div class="reveal">
+        <p class="quote">Дома — пуховик и минус. Здесь — песок, океан и +22.</p>
+        <p>Утром кофе на террасе с видом на Атлантику. Днём — пляж с чёрным вулканическим песком или бирюзовые лагуны Лаго-Мартианес. Вечером — закат у воды, за руку, без планов на завтра.</p>
+        <p>А если подняться на Тейде, облака останутся внизу: стоишь над белым морем и понимаешь, зачем ехал.</p>
+      </div>
+      <div class="ph reveal">
+        <video data-src="video/tenerife-coast.mp4" poster="images/tenerife-coast.jpg" muted loop playsinline preload="none" aria-label="Побережье Пуэрто-де-ла-Крус и вулкан Тейде"></video>
+      </div>
+    </div>
+
+    <div class="moments">
+      <figure class="ph mo wide reveal"><img src="images/tenerife-north.jpg" alt="Северное побережье Тенерифе и заснеженная вершина Тейде" loading="lazy"><figcaption><span>Север острова</span>Цветы у океана и снег на вершине Тейде</figcaption></figure>
+      <figure class="ph mo reveal"><img src="images/emo-beach-smile.jpg" alt="Девушка в солнечных очках смеётся, лёжа на песке" loading="lazy" style="object-position: center 62%;"><figcaption><span>Пляж</span>Декабрь. Песок. +22</figcaption></figure>
+      <figure class="ph mo reveal"><img src="images/emo-teide-couple.jpg" alt="Пара обнимается на закате, вдали — вулкан Тейде" loading="lazy" style="object-position: center 40%;"><figcaption><span>Тейде</span>С самым дорогим человеком</figcaption></figure>
+      <figure class="ph mo reveal"><img src="images/emo-teide-road.jpg" alt="Девушка улыбается на дороге в национальном парке Тейде, за спиной — вулкан" loading="lazy" style="object-position: center 55%;"><figcaption><span>Тейде</span>Дорога к вулкану</figcaption></figure>
+      <figure class="ph mo wide reveal"><img src="images/lago-martianez.jpg" alt="Лагуны Лаго-Мартианес на набережной Пуэрто-де-ла-Крус" loading="lazy"><figcaption><span>Пуэрто-де-ла-Крус</span>Бирюзовые лагуны Лаго-Мартианес</figcaption></figure>
+      <figure class="ph mo reveal"><img src="images/emo-tenerife-walk.jpg" alt="Пара идёт за руку по чёрному песку на закате" loading="lazy" style="object-position: 52% center;"><figcaption><span>Вечер у океана</span>За руку по чёрному песку</figcaption></figure>
+      <figure class="ph mo wide reveal"><img src="images/garachico.jpg" alt="Гарачико: городок на берегу океана" loading="lazy"><figcaption><span>Гарачико</span>Старинный городок у самого океана</figcaption></figure>
+      <figure class="ph mo wide reveal"><img src="images/beach-bollullo.jpg" alt="Пляж Больюльо с чёрным песком у подножия скал" loading="lazy"><figcaption><span>Пляж Больюльо</span>Чёрный песок и океанская волна</figcaption></figure>
+    </div>
+
+    <div class="video yt-lazy" data-id="FRRRJ9oJN6E" style="margin-top:32px"><button type="button" aria-label="Смотреть видео: Тенерифе"><img src="https://i.ytimg.com/vi/FRRRJ9oJN6E/maxresdefault.jpg" alt="" loading="lazy"><span class="yt-play"></span></button></div>
     <p class="caption">Видео: A Dream from Tenerife · majernik.</p>
 
     <p class="subhead">Что посмотреть</p>
